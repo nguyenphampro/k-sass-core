@@ -1,0 +1,10 @@
+// Margin
+$gennumw: 1
+$percol: 100
+$grid-columns: 12
+@while $gennumw <= $grid-columns
+	.w-#{$gennumw}
+		width: '#{(($percol/$grid-columns)*$gennumw)}%' 
+	.mw-#{$gennumw}
+		max-width: '#{(($percol/$grid-columns)*$gennumw)}%'
+	$gennumw: $gennumw + 1
