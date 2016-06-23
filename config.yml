@@ -1,0 +1,51 @@
+config: 
+  concat: 
+    js: 
+      - "bower_components/jquery/dist/jquery.js"
+    css: 
+      - "bower_components/animate.css/animate.css"
+  title: "Mobile App"
+  author: 
+    email: "baonguyenyam@gmail.com"
+    name: "BaoNguyen"
+    link: "https://github.com/baonguyenyam"
+    coding: "Coding by Bao Nguyen"
+  license: "MIT"
+  name: "Bao Nguyen Apps"
+  version: "1.0"
+  url: "./"
+  source: "src"
+  views: "src/views"
+  dest: "dist"
+  tmp: "tmp"
+  docs: "docs"
+  test: "test"
+  resources: "resources"
+  config: "config"
+  fonts: "fonts"
+  data: "data"
+  blank: "_blank"
+  images: "img"
+  layouts: 
+    assets: "templates"
+    jade: "templates"
+    hamber: "templates"
+  scripts: 
+    lang: "js"
+    assets: "js"
+    root: "scripts"
+    typescript: "scripts/typescript"
+    javascript: "scripts"
+    coffee: "scripts/coffee"
+  styles: 
+    lang: "sass"
+    assets: "css"
+    root: "styles"
+    css: "styles/css"
+    less: "styles/less"
+    sass: "styles"
+    stylus: "styles/stylus"
+  ignore: 
+    copy: "{*.bat,templates,templates/**,styles,styles/**,task,task/**,variable,variable/**,services,services/**,shims,shims/**,scripts,scripts/**,docs,docs/**,components,components/**/*.{sass,scss,jade,js},providers,providers/**,config,config/**,**/*.jade,**/*.js,**/*.ts}"
+  host: "127.0.0.1"
+  port: "8888"
