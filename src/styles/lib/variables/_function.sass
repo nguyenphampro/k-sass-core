@@ -1,0 +1,35 @@
+@function str-replace($string, $search, $replace: "")
+  $index: str-index($string, $search)
+  @if $index
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace)
+  @return $string
+
+@function check_list($list)
+  @each $item in $list
+    @if not $item
+      @return true
+  @return false
+
+@function get_array($values)
+  $output: null
+  $a: nth($values, 1)
+  $b: if(length($values) < 2, $a, nth($values, 2))
+  $c: if(length($values) < 3, $a, nth($values, 3))
+  $d: if(length($values) < 2, $a, nth($values, if(length($values) < 4, 2, 4)))
+  @if $a == 0
+    $a: 0
+  @if $b == 0
+    $b: 0
+  @if $c == 0
+    $c: 0
+  @if $d == 0
+    $d: 0
+  @if $a == $b and $a == $c and $a == $d
+    $output: $a
+  @else if $a == $c and $b == $d
+    $output: $a $b
+  @else if $b == $d
+    $output: $a $b $c
+  @else
+    $output: $a $b $c $d
+  @return $output
