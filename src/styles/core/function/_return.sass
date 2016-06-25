@@ -6,13 +6,13 @@
   $c: if(length($values) < 3, $a, nth($values, 3))
   $d: if(length($values) < 2, $a, nth($values, if(length($values) < 4, 2, 4)))
   @if $a == 0
-    $a: str-replace(#{$a}, "_", " !important")
+    $a: im-rep(#{$a})
   @if $b == 0
-    $b: str-replace(#{$b}, "_", " !important")
+    $b: im-rep(#{$b})
   @if $c == 0
-    $c: str-replace(#{$c}, "_", " !important")
+    $c: im-rep(#{$c})
   @if $d == 0
-    $d: str-replace(#{$d}, "_", " !important")
+    $d: im-rep(#{$d})
 
   @if $a == $b and $a == $c and $a == $d
     $output: $a

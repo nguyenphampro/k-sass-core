@@ -20,17 +20,17 @@
     $getborder: str-replace(#{$getborder}, "non", "inherit")
   #{$all}: #{$getborder}
   @if length($values) == 1
-    #{$top}: str-replace(#{$values}, "_", " !important")
+    #{$top}: im-rep(#{$values})
   @else if length($values) == 2
-    #{$top}: str-replace(#{nth($values, 1)}, "_", " !important")
-    #{$right}: str-replace(#{nth($values, 2)}, "_", " !important")
+    #{$top}: im-rep(#{nth($values, 1)})
+    #{$right}: im-rep(#{nth($values, 2)})
   @else if length($values) == 3
-    #{$top}: str-replace(#{nth($values, 1)}, "_", " !important")
-    #{$right}: str-replace(#{nth($values, 2)}, "_", " !important")
-    #{$bottom}: str-replace(#{nth($values, 3)}, "_", " !important")
+    #{$top}: im-rep(#{nth($values, 1)})
+    #{$right}: im-rep(#{nth($values, 2)})
+    #{$bottom}: im-rep(#{nth($values, 3)})
   @else if length($values) == 4
-    #{$top}: str-replace(#{nth($values, 1)}, "_", " !important")
-    #{$right}: str-replace(#{nth($values, 2)}, "_", " !important")
-    #{$bottom}: str-replace(#{nth($values, 3)}, "_", " !important")
-    #{$left}: str-replace(#{nth($values, 4)}, "_", " !important")
+    #{$top}: im-rep(#{nth($values, 1)})
+    #{$right}: im-rep(#{nth($values, 2)})
+    #{$bottom}: im-rep(#{nth($values, 3)})
+    #{$left}: im-rep(#{nth($values, 4)})
 
