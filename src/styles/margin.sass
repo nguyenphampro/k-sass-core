@@ -8,25 +8,29 @@
 ///
 
 .sample-0
-    +mar(3rem)
+    /*+mar(3rem_)*/
     +mar(3rem_)
 
 .sample-1
-    +mar(3rem 0)
-    +mar(3rem_ 0)
-    +mar(3rem 0_)
+    /*+mar(2rem_ 0_ 3rem_ 0)*/
+    +mar(2rem_ 0_ 3rem_ 0)
 
 .sample-2
-    +mar(7px_)
+    /*+mar(7px 0_)*/
+    +mar(7px 0_)
 
 .sample-3
-    +mar(5px 4px_)
+    /*+mar(5px 'calc(100% - 4px)_')*/
+    +mar(5px 'calc(100% - 4px)_')
 
 .sample-4
+    /*+mar(3px null 4rem)*/
     +mar(3px null 4rem)
 
 .sample-5
-    +mar(1px_ null 0rem_ 4rem)
+    /*+margin(1px_ null 0rem_ 4rem)*/
+    +margin(1px_ null 0rem_ 4rem)
 
 .sample-6
-    +mar(7px_ null 2rem_ 1rem_)
+    /*+mar(7px_ 2rem null 1rem_)*/
+    +mar(7px_ 2rem null 1rem_)

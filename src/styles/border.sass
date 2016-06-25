@@ -7,26 +7,34 @@
 /// @:null: with null to leave the value
 ///
 .sample-0
-    +bor(null, null, 5px)
+    /*+bor(null, null, '5%')*/
+    +bor(null, null, '5%')
 
 .sample-1
+    /*+bor(null, dashed #890, 5px 4px_)*/
     +bor(null, dashed #890, 5px 4px_)
 
 .sample-2
+    /*+bor(null, non, 1rem 2rem 3rem_)*/
     +bor(null, non, 1rem 2rem 3rem_)
 
 .sample-3
-   +bor(null, null, 2px 7px 0_ 3rem_)
+    /*+bor(null, null, 2px 7px 0_ 3rem_)*/
+    +bor(null, null, 2px 7px 0_ 3rem_)
 
 .sample-4
+    /*+bor(top, solid #345, 5px)*/
     +bor(top, solid #345, 5px)
 
 .sample-5
-    +bor(bottom, das red, 4px_)
+    /*+border(bottom, das red, 4px_)*/
+    +border(bottom, das red, 4px_)
 
 .sample-6
-    +bor(left, null, 1rem)
+    /*+bor(left, null, calc(100% - 3rem))*/
+    +bor(left, null, calc(100% - 3rem))
 
 .sample-7
-   +bor(right, null, 0_)
+   /*+bor(right, null, 0_)*/
+   +bor(right, dot black, 0_)
 

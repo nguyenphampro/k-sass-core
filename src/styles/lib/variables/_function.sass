@@ -10,6 +10,19 @@
       @return true
   @return false
   
+@function check-length($value)
+  @return type-of($value) != "null" and (str-slice($value + "", 1, 4) == "calc" or index(auto inherit initial 0, $value) or type-of($value) == "number" and not unitless($value))
+
+@function check_contains($list, $values...)
+  @each $value in $values
+    @if type-of(index($list, $value)) != "number"
+      @return false
+
+  @return true
+
+@function check_number($value)
+  @return check_contains("0" "1" "2" "3" "4" "5" "6" "7" "8" "9" 0 1 2 3 4 5 6 7 8 9, $value)
+
 
 @function get_array($values)
   $output: null
@@ -17,12 +30,24 @@
   $b: if(length($values) < 2, $a, nth($values, 2))
   $c: if(length($values) < 3, $a, nth($values, 3))
   $d: if(length($values) < 2, $a, nth($values, if(length($values) < 4, 2, 4)))
+  @if $a == 0
+    $a: str-replace(#{$a}, "_", " !important")
+  @if $b == 0
+    $b: str-replace(#{$b}, "_", " !important")
+  @if $c == 0
+    $c: str-replace(#{$c}, "_", " !important")
+  @if $d == 0
+    $d: str-replace(#{$d}, "_", " !important")
+
   @if $a == $b and $a == $c and $a == $d
     $output: $a
   @else if $a == $c and $b == $d
     $output: $a $b
   @else if $b == $d
-    $output: $a $b $c
+    @if length($values) == 3
+      $output: $a $b $c
+    @else 
+      $output: $a $b $c $d
   @else
     $output: $a $b $c $d
   @return $output
