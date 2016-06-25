@@ -1,0 +1,36 @@
+// POSITON VARIABLES
+=bn-setposition($pre, $suf, $values)
+  $top:  "top"
+  $bottom:  "bottom"
+  $left:  "left"
+  $right:  "right"
+  $all:  $pre
+  $values: get_array($values)
+  $getborder: initial
+  @if $suf != null
+    $getborder: str-replace(#{$suf}, "relative", "rel")
+    $getborder: str-replace(#{$getborder}, "rel", "relative")
+    $getborder: str-replace(#{$getborder}, "absolute", "abs")
+    $getborder: str-replace(#{$getborder}, "abs", "absolute")
+    $getborder: str-replace(#{$getborder}, "fixed", "fix")
+    $getborder: str-replace(#{$getborder}, "fix", "fixed")
+    $getborder: str-replace(#{$getborder}, "static", "sta")
+    $getborder: str-replace(#{$getborder}, "sta", "static")
+    $getborder: str-replace(#{$getborder}, "inherit", "inh")
+    $getborder: str-replace(#{$getborder}, "non", "inherit")
+  #{$all}: #{$getborder}
+  @if length($values) == 1
+    #{$top}: str-replace(#{$values}, "_", " !important")
+  @else if length($values) == 2
+    #{$top}: str-replace(#{nth($values, 1)}, "_", " !important")
+    #{$right}: str-replace(#{nth($values, 2)}, "_", " !important")
+  @else if length($values) == 3
+    #{$top}: str-replace(#{nth($values, 1)}, "_", " !important")
+    #{$right}: str-replace(#{nth($values, 2)}, "_", " !important")
+    #{$bottom}: str-replace(#{nth($values, 3)}, "_", " !important")
+  @else if length($values) == 4
+    #{$top}: str-replace(#{nth($values, 1)}, "_", " !important")
+    #{$right}: str-replace(#{nth($values, 2)}, "_", " !important")
+    #{$bottom}: str-replace(#{nth($values, 3)}, "_", " !important")
+    #{$left}: str-replace(#{nth($values, 4)}, "_", " !important")
+

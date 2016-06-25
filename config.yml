@@ -43,7 +43,7 @@ config:
     root: "styles"
     css: "styles/css"
     less: "styles/less"
-    sass: "styles"
+    sass: "styles/sample"
     stylus: "styles/stylus"
   ignore: 
     copy: "{*.bat,templates,templates/**,styles,styles/**,task,task/**,variable,variable/**,services,services/**,shims,shims/**,scripts,scripts/**,docs,docs/**,components,components/**/*.{sass,scss,jade,js},providers,providers/**,config,config/**,**/*.jade,**/*.js,**/*.ts}"

@@ -1,0 +1,36 @@
+// BORDER VARIABLES
+=bn-setborder($pre, $suf, $type, $values)
+  $top: $pre + "-top" + if($suf, "-#{$suf}", "")
+  $bottom: $pre + "-bottom" + if($suf, "-#{$suf}", "")
+  $left: $pre + "-left" + if($suf, "-#{$suf}", "")
+  $right: $pre + "-right" + if($suf, "-#{$suf}", "")
+  $all: $pre + if($suf, "-#{$suf}", "")
+  $values: get_array($values)
+  $getborder: solid transparent
+  @if $type != null
+    $getborder: str-replace(#{$type}, "solid", "sol")
+    $getborder: str-replace(#{$getborder}, "sol", "solid")
+    $getborder: str-replace(#{$getborder}, "dashed", "das")
+    $getborder: str-replace(#{$getborder}, "das", "dashed")
+    $getborder: str-replace(#{$getborder}, "dotted", "dot")
+    $getborder: str-replace(#{$getborder}, "dot", "dotted")
+    $getborder: str-replace(#{$getborder}, "double", "dou")
+    $getborder: str-replace(#{$getborder}, "dou", "double")
+    $getborder: str-replace(#{$getborder}, "none", "non")
+    $getborder: str-replace(#{$getborder}, "non", "none")
+  @if length($values) == 1
+    #{$all}: #{$getborder} str-replace(#{$values}, "_", " !important")
+  @else if length($values) == 2
+    #{$pre}-top: #{$getborder} str-replace(#{nth($values, 1)}, "_", " !important")
+    #{$pre}-right: #{$getborder} str-replace(#{nth($values, 2)}, "_", " !important")
+    #{$pre}-bottom: #{$getborder} str-replace(#{nth($values, 1)}, "_", " !important")
+    #{$pre}-left: #{$getborder} str-replace(#{nth($values, 2)}, "_", " !important")
+  @else if length($values) == 3
+    #{$pre}-top: #{$getborder} str-replace(#{nth($values, 1)}, "_", " !important")
+    #{$pre}-right: #{$getborder} str-replace(#{nth($values, 2)}, "_", " !important")
+    #{$pre}-bottom: #{$getborder} str-replace(#{nth($values, 3)}, "_", " !important")
+  @else if length($values) == 4
+    #{$pre}-top: #{$getborder} str-replace(#{nth($values, 1)}, "_", " !important")
+    #{$pre}-right: #{$getborder} str-replace(#{nth($values, 2)}, "_", " !important")
+    #{$pre}-bottom: #{$getborder} str-replace(#{nth($values, 3)}, "_", " !important")
+    #{$pre}-left: #{$getborder} str-replace(#{nth($values, 4)}, "_", " !important")
