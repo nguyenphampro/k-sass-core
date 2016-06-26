@@ -7,6 +7,25 @@
   white-space: nowrap
   word-wrap: normal
 
+// Fonts 
+=font-face($fontFamily: 'myFont', $eotFileSrc: "myFont.eot", $woffFileSrc: "myFont.woff", $woffFileSrc2: "myFont.woff2", $ttfFileSrc: "myFont.ttf", $svgFileSrc: "myFont.svg", $svgFontID: "#myFont")
+  @font-face
+    font-family: '#{$fontFamily}'
+    src: url(#{$eotFileSrc}) 
+    src: url(#{$eotFileSrc}?#iefix) format('embedded-opentype'), 
+    url(#{$woffFileSrc}) format('woff'),
+    url(#{$woffFileSrc2}) format('woff2'),
+    url(#{$ttfFileSrc}) format('truetype'),
+    url(#{$svgFileSrc}#product_sansregular) format('svg')
+    font-weight: normal
+    font-style: normal
+
+// Set Center 
+=set-center()
+  +transform(translateX(-50%) translateY(-50%)) 
+  +pos(abs,50% null null 50%)
+
+// Set Full Width
 =full-width
   min-width: 100vw
   min-height: 100vh
@@ -22,3 +41,32 @@
 // Set Padding 
 =lh ($lineheight:0)
   line-height: $lineheight
+
+/// Opacity
+=opacity($opacity: 0.5)
+  $opacityMultiplied: $opacity * 100
+  filter: alpha(opacity = $opacityMultiplied)
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $opacityMultiplied + ")"
+  +bn-prefix("opacity", $opacity)
+
+// Placeholder
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+
+// Selection
+=selection
+  &::selection
+    @content
+  &:-moz-selection
+    @content
+  &::-moz-selection
+    @content
+  &:-ms-selection
+    @content
