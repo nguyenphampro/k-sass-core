@@ -7,6 +7,19 @@
   white-space: nowrap
   word-wrap: normal
 
+// Clearfix
+=clearfix()
+  @extend %clearfix
+
+// 
+=visually-hidden()
+  @extend %visuallyhidden
+
+// Get Rem
+=setrem($size)
+  font-size: $size
+  font-size: calculateRem($size)
+
 // Fonts 
 =font-face($fontFamily: 'myFont', $eotFileSrc: "myFont.eot", $woffFileSrc: "myFont.woff", $woffFileSrc2: "myFont.woff2", $ttfFileSrc: "myFont.ttf", $svgFileSrc: "myFont.svg", $svgFontID: "#myFont")
   @font-face
