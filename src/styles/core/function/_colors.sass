@@ -1,0 +1,14 @@
+// Colors
+@function color($co)
+    $mapcolor: map-get($bn-colors, "#{$co}")
+    @if ($mapcolor)
+        @return $mapcolor
+    @else
+        @return white
+
+@function color-rgba($co, $o: 1)
+    $mapcolor: map-get($bn-colors, "#{$co}")
+    @if ($mapcolor)
+        @return rgba(red($mapcolor),green($mapcolor),blue($mapcolor),$o)
+    @else
+        @return white

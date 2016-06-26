@@ -1,0 +1,28 @@
+@import ../k-sass-core
+
+///
+/// Default BN-SAS-CORE configuration settings.
+/// @:Option: with "_" will be compile to !important
+/// @:null: with null to leave the value
+///
+
+.text-wrap-1
+    /*+text-wrap()*/
+    +text-wrap()
+
+.text-wrap-2
+    /*+text-wrap(160px, block)*/
+    +text-wrap(160px, block)
+
+.full-width-1
+    +full-width()
+
+.parent
+    @extend .full-width-1
+    font-size: 2rem
+
+.number
+    co: abs(12)
+    po: exist("some-feature-that-exists")
+    ok: color(foo)
+    abc: color-rgba(foo,.5)
