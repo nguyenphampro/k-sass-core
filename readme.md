@@ -10,11 +10,13 @@
 
 ***SASS type:***
 
-```+pos(null, 1rem null 3rem_)```
+```sass
++pos(null, 1rem null 3rem_)
+```
 
 ***Compile to:***
 
-```
+```css
 position: initial;
 top: 1rem;
 bottom: 3rem !important;
@@ -23,11 +25,13 @@ bottom: 3rem !important;
 
 ***SASS type:***
 
-```+mar(2rem_ "0 !important" 3rem_ 0)```
+```sass
++mar(2rem_ "0 !important" 3rem_ 0)
+```
 
 ***Compile to:***
 
-```
+```css
 margin-top: 2rem !important;
 margin-right: 0 !important;
 margin-bottom: 3rem !important;
@@ -37,11 +41,13 @@ margin-left: 0;
 
 ***SASS type:***
 
-```+bor(null, dashed color(main), 5px 4px_)```
+```sass
++bor(null, dashed color(main), 5px 4px_)
+```
 
 ***Compile to:***
 
-```
+```css
 border-top: dashed #795d9c 5px;
 border-right: dashed #795d9c 4px !important;
 border-bottom: dashed #795d9c 5px;
@@ -51,22 +57,26 @@ border-left: dashed #795d9c 4px !important;
 
 ***SASS type:***
 
-```+bor(left, null, calc(100% - 3rem))```
+```sass
++bor(left, null, calc(100% - 3rem))
+```
 
 ***Compile to:***
 
-```
+```css
 border-left: solid transparent calc(100% - 3rem);
 ```
 ===============================
 
 ***SASS type:***
 
-```+bor-rad(7px_ '30%_' null 20px)```
+```sass
++bor-rad(7px_ '30%_' null 20px)
+```
 
 ***Compile to:***
 
-```
+```css
 border-top-radius: 7px !important;
 border-right-radius: 30% !important;
 border-left-radius: 20px;
@@ -75,14 +85,14 @@ border-left-radius: 20px;
 
 ***SASS type:***
 
-```
+```sass
 color: color(main)
 background: color-rgba(color(link),.6)
 ```
 
 ***Compile to:***
 
-```
+```css
 color: #795d9c;
 background: rgba(96, 125, 139, 0.6);
 ```
@@ -90,14 +100,14 @@ background: rgba(96, 125, 139, 0.6);
 
 ***SASS type:***
 
-```
+```sass
 color: color-rgba(color-up(color(main), 2%),.3)
 background: color-down(color-rgba(color(link),.6),20%)
 ```
 
 ***Compile to:***
 
-```
+```css
 color: rgba(255, 255, 255, 0.3);
 background: #cccccc;
 ```
@@ -105,11 +115,13 @@ background: #cccccc;
 
 ***SASS type:***
 
-```+background-gradient(color(main), color(link))```
+```sass
++background-gradient(color(main), color(link))
+```
 
 ***Compile to:***
 
-```
+```css
 background-color: #795d9c;
 background-image: -webkit-gradient(left top, left bottom, color-stop(0%, #795d9c), color-stop(100%, #607d8b));
 background-image: -webkit-linear-gradient(top, #795d9c 0%, #607d8b 100%);
