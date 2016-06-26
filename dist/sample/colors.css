@@ -18,3 +18,8 @@
   color: rgba(255, 255, 255, 0.3);
   background: #cccccc;
 }
+
+.color-4 {
+  /*color: color-get($bn-colors,main)*/
+  color: #795d9c;
+}

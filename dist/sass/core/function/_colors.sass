@@ -1,4 +1,11 @@
 // Colors
+@function color-get($bn-colors, $co)
+    $mapcolor: map-get($bn-colors, "#{$co}")
+    @if ($mapcolor)
+        @return $mapcolor
+    @else
+        @return white
+
 @function color($co)
     $mapcolor: map-get($bn-colors, "#{$co}")
     @if ($mapcolor)
