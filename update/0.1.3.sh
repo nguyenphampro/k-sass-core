@@ -6,10 +6,10 @@ then
 	printf "\033[0;33m0.0.1 Updated\033[0m\n"
 else
 	cd ..
-	npm install gulp 
+	gem install jekyll
 	cd update
 	(
-	   printf 'gulp\n'
+	   printf 'jekyll\n'
 	) > 0.0.1.log
 	printf "-----------------------------"
     printf "\033[1;32mCongrats!\033[0m\n"

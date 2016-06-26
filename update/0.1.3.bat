@@ -5,11 +5,12 @@ if exist 0.0.1.log (
     ECHO 0.0.1 Updated
 ) else (
 	cd..
-	npm install gulp 
+	@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+	choco install ruby -y
 	cd update 
 	rem Saved
 	@echo off
-	@echo gulp > 0.0.1.log
+	@echo chocolatey > 0.0.1.log
     ECHO -----------------------------
     ECHO Congrats!
     ECHO v0.0.1 Update Finished
