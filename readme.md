@@ -6,6 +6,119 @@
 * Copyright 2016 by Bao Nguyen.
 * MIT License
 
+===============================
+
+***SASS type:***
+
+```+pos(null, 1rem null 3rem_)```
+
+***Compile to:***
+
+```
+position: initial;
+top: 1rem;
+bottom: 3rem !important;
+```
+===============================
+
+***SASS type:***
+
+```+mar(2rem_ "0 !important" 3rem_ 0)```
+
+***Compile to:***
+
+```
+margin-top: 2rem !important;
+margin-right: 0 !important;
+margin-bottom: 3rem !important;
+margin-left: 0;
+```
+===============================
+
+***SASS type:***
+
+```+bor(null, dashed color(main), 5px 4px_)```
+
+***Compile to:***
+
+```
+border-top: dashed #795d9c 5px;
+border-right: dashed #795d9c 4px !important;
+border-bottom: dashed #795d9c 5px;
+border-left: dashed #795d9c 4px !important;
+```
+===============================
+
+***SASS type:***
+
+```+bor(left, null, calc(100% - 3rem))```
+
+***Compile to:***
+
+```
+border-left: solid transparent calc(100% - 3rem);
+```
+===============================
+
+***SASS type:***
+
+```+bor-rad(7px_ '30%_' null 20px)```
+
+***Compile to:***
+
+```
+border-top-radius: 7px !important;
+border-right-radius: 30% !important;
+border-left-radius: 20px;
+```
+===============================
+
+***SASS type:***
+
+```
+color: color(main)
+background: color-rgba(color(link),.6)
+```
+
+***Compile to:***
+
+```
+color: #795d9c;
+background: rgba(96, 125, 139, 0.6);
+```
+===============================
+
+***SASS type:***
+
+```
+color: color-rgba(color-up(color(main), 2%),.3)
+background: color-down(color-rgba(color(link),.6),20%)
+```
+
+***Compile to:***
+
+```
+color: rgba(255, 255, 255, 0.3);
+background: #cccccc;
+```
+===============================
+
+***SASS type:***
+
+```+background-gradient(color(main), color(link))```
+
+***Compile to:***
+
+```
+background-color: #795d9c;
+background-image: -webkit-gradient(left top, left bottom, color-stop(0%, #795d9c), color-stop(100%, #607d8b));
+background-image: -webkit-linear-gradient(top, #795d9c 0%, #607d8b 100%);
+background-image: linear-gradient(to bottom, #795d9c 0%, #607d8b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#795d9c', endColorstr='#607d8b', GradientType=0 );
+```
+
+And more...
+
 ##Sass Functions Cheat Sheet
 
 1. [RGB Functions](#rgb-functions)
