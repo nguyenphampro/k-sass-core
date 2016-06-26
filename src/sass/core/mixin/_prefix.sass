@@ -6,3 +6,8 @@
   -ms-#{$property}: #{$value}
   -o-#{$property}: #{$value}
   #{$property}: #{$value}
+
+=bn-value-prefixer($property,$value,$prefixes:())
+  @each $prefix in $prefixes
+    #{$property}: #{"-" + $prefix + "-" + $value}
+  #{$property}: $value

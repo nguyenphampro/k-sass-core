@@ -1,0 +1,7 @@
+.arrow-1:after {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: transparent transparent #795d9c;
+  border-width: 0 1rem 1rem;
+}

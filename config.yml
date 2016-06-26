@@ -40,7 +40,7 @@ config:
   styles: 
     lang: "sass"
     assets: "sample"
-    root: "styles"
+    root: "sample"
     css: "styles/css"
     less: "styles/less"
     sass: "sample"
