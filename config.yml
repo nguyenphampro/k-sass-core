@@ -39,13 +39,13 @@ config:
     coffee: "scripts/coffee"
   styles: 
     lang: "sass"
-    assets: "css"
+    assets: "sample"
     root: "styles"
     css: "styles/css"
     less: "styles/less"
-    sass: "styles/sample"
+    sass: "sample"
     stylus: "styles/stylus"
   ignore: 
-    copy: "{*.bat,templates,templates/**,styles,styles/**,task,task/**,variable,variable/**,services,services/**,shims,shims/**,scripts,scripts/**,docs,docs/**,components,components/**/*.{sass,scss,jade,js},providers,providers/**,config,config/**,**/*.jade,**/*.js,**/*.ts}"
+    copy: "{templates,templates/**}"
   host: "127.0.0.1"
   port: "8888"

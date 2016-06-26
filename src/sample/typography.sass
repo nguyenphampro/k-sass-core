@@ -1,0 +1,47 @@
+@import ../sass/k-sass-core
+
+///
+/// Default BN-SAS-CORE configuration settings.
+/// @:Option: with "_" will be compile to !important
+/// @:null: with null to leave the value
+///
+
+.text-wrap-1
+    /*+text-wrap()*/
+    +text-wrap()
+
+.text-wrap-2
+    /*+text-wrap(160px, block)*/
+    +text-wrap(160px, block)
+
+.set-center
+    /*+set-center()*/
+    +set-center()
+
+.full-width-1
+    /*+full-width()*/
+    +full-width()
+
+.parent
+    /*@extend .full-width-1*/
+    /*font-size: 2rem*/
+    @extend .full-width-1
+    font-size: 2rem
+
+.font-size
+    /*+fz(2rem)*/
+    +fz(2rem)
+
+.font-weight
+    /*+fw(400)*/
+    +fw(400)
+
+.line-height
+    /*+lh(1.5)*/
+    +lh(1.5)
+
+.opacity
+    +opacity(.5)
+
+/*+font-face($fontFamily: 'myFont', $eotFileSrc: "../fonts/myFont.eot", $woffFileSrc: "../fonts/myFont.woff", $woffFileSrc2: "../fonts/myFont.woff2", $ttfFileSrc: "../fonts/myFont.ttf", $svgFileSrc: "../fonts/myFont.svg", $svgFontID: "#myFont")*/
++font-face($fontFamily: 'myFont', $eotFileSrc: "../fonts/myFont.eot", $woffFileSrc: "../fonts/myFont.woff", $woffFileSrc2: "../fonts/myFont.woff2", $ttfFileSrc: "../fonts/myFont.ttf", $svgFileSrc: "../fonts/myFont.svg", $svgFontID: "#myFont")

@@ -17,7 +17,7 @@ module.exports = function(gulp, setgulp, plugins, config, target, browserSync) {
      gulp.src([
         path.join(url.source, '**/*'),
         path.join(url.source, '.htaccess'),
-        '!' + path.join(url.source, '{**/\_*,**/\_*/**}'),
+        // '!' + path.join(url.source, '{**/\_*,**/\_*/**}'),
         '!' + path.join(url.source, url.ignore.copy)
       ])
       .pipe(plugins.changed(dest))
