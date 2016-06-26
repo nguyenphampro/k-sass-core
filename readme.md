@@ -1,20 +1,10 @@
-
-## Đây là phiên bản Front-End với các tính năng
-
-* Jade Teamplate
-* CSSMin, Uglify
-* Bunder JS, CSS HTML
-* SVG, ImageMin, Real Favicon
-* Angular, Webpack
-* Coffee Script, Babel, TypeScripts
-* Concat, Webpack, Phantom, Karma
-* SASS/SCSS, LESS, Stylus
-* BrowserSync
-
-# Chú ý: 
-`Không tạo file gì mới trong thư mục public tất cả chỉ tạo trong thư mục resources/assets`
-
-### Hướng dẫn Cài mới Project 
+# K-SASS-CORE 
+* BN-SASS-CORE v2.0.3
+* BN-SASS-CORE is just a library.
+* BN-SASS-CORE requires NODE-SASS. If your OS is older, this version may not compile.
+* http://baonguyenyam.github.io
+* Copyright 2016 by Bao Nguyen.
+* MIT License
 
 ##Sass Functions Cheat Sheet
 
