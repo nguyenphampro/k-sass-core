@@ -15,14 +15,23 @@
     +text-wrap(160px, block)
 
 .full-width-1
+    /*+full-width()*/
     +full-width()
 
 .parent
+    /*@extend .full-width-1*/
+    /*font-size: 2rem*/
     @extend .full-width-1
     font-size: 2rem
 
-.number
-    co: abs(12)
-    po: exist("some-feature-that-exists")
-    ok: color(foo)
-    abc: color-rgba(foo,.5)
+.font-size
+    /*+fz(2rem)*/
+    +fz(2rem)
+
+.font-weight
+    /*+fw(400)*/
+    +fw(400)
+
+.line-height
+    /*+lh(1.5)*/
+    +lh(1.5)
