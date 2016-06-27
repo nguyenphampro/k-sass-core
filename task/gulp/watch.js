@@ -12,7 +12,7 @@ module.exports = function(gulp, setgulp, plugins, config, target, browserSync) {
         if (!setgulp.production) {
             // Styles
             gulp.watch([
-                path.join(url.source, url.styles.root, '**/*.{css,sass,scss,less,styl}')
+                path.join(url.source, '**/*.{css,sass,scss,less,styl}')
             ], ['compass']);
 
 

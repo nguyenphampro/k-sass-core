@@ -41,7 +41,18 @@
     +lh(1.5)
 
 .opacity
+    /*+opacity(.5)*/
     +opacity(.5)
 
-/*+font-face($fontFamily: 'myFont', $eotFileSrc: "../fonts/myFont.eot", $woffFileSrc: "../fonts/myFont.woff", $woffFileSrc2: "../fonts/myFont.woff2", $ttfFileSrc: "../fonts/myFont.ttf", $svgFileSrc: "../fonts/myFont.svg", $svgFontID: "#myFont")*/
-+font-face($fontFamily: 'myFont', $eotFileSrc: "../fonts/myFont.eot", $woffFileSrc: "../fonts/myFont.woff", $woffFileSrc2: "../fonts/myFont.woff2", $ttfFileSrc: "../fonts/myFont.ttf", $svgFileSrc: "../fonts/myFont.svg", $svgFontID: "#myFont")
+/*++font-face('ABCFonts', "../fonts/", "myFont")*/
++font-face('ABCFonts', "../fonts/", "myFont")
+
+.before
+    /*+before(null, 50% 30px)*/
+    +before(null, 50% 30px)
+
+.after 
+    /*+after('*', '50%_' 30px_, inline)*/
+    /*+pos(abs, 0 null null 0)*/
+    +after('*', '50%_' 30px_, inline)
+    +pos(abs, 0 null null 0)

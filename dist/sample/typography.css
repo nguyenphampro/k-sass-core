@@ -56,6 +56,7 @@
 }
 
 .opacity {
+  /*+opacity(.5)*/
   filter: alpha(opacity=50);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   -webkit-opacity: 0.5;
@@ -66,11 +67,31 @@
   opacity: 0.5;
 }
 
-/*+font-face($fontFamily: 'myFont', $eotFileSrc: "../fonts/myFont.eot", $woffFileSrc: "../fonts/myFont.woff", $woffFileSrc2: "../fonts/myFont.woff2", $ttfFileSrc: "../fonts/myFont.ttf", $svgFileSrc: "../fonts/myFont.svg", $svgFontID: "#myFont")*/
+/*++font-face('ABCFonts', "../fonts/", "myFont")*/
 @font-face {
-  font-family: "myFont";
+  font-family: "ABCFonts";
   src: url(../fonts/myFont.eot);
-  src: url(../fonts/myFont.eot?#iefix) format("embedded-opentype"), url(../fonts/myFont.woff) format("woff"), url(../fonts/myFont.woff2) format("woff2"), url(../fonts/myFont.ttf) format("truetype"), url(../fonts/myFont.svg#product_sansregular) format("svg");
+  src: url(../fonts/myFont.eot?#iefix) format("embedded-opentype"), url(../fonts/myFont.woff) format("woff"), url(../fonts/myFont.woff2) format("woff2"), url(../fonts/myFont.ttf) format("truetype"), url(../fonts/myFont.svg#ABCFonts) format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+.before {
+  /*+before(null, 50% 30px)*/
+  content: '';
+  display: block;
+  width: 50%;
+  height: 30px;
+}
+
+.after {
+  /*+after('*', '50%_' 30px_, inline)*/
+  /*+pos(abs, 0 null null 0)*/
+  content: "*";
+  display: inline;
+  width: 50% !important;
+  height: 30px !important;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
