@@ -1,12 +1,19 @@
 {
-  "private": true,
+  "name": "K-SASS-CORE",
+  "version": "0.0.1",
+  "description": "K-SASS_CORE: An SASS Lib",
+  "repository": "https://github.com/baonguyenyam/k-sass-core.git",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.12.0"
+  },
   "scripts": {
     "pro": "gulp build --production",
     "dev": "gulp watch",
     "check": "npm outdated"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
+    "babel-preset-es2015": "^6.9.0",
     "body-parser": "^1.15.1",
     "browser-sync": "^2.12.10",
     "clean-css": "^3.4.18",
@@ -74,6 +81,9 @@
     "yargs": "^4.2.0"
   },
   "dependencies": {
-    "babel-preset-es2015": "^6.9.0"
+    "autoprefixer": "^6.3.6",
+    "bootstrap": "^4.0.0-alpha.2",
+    "node-sass": "^3.8.0",
+    "sass": "^0.5.0"
   }
 }

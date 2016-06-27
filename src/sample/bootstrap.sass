@@ -1,0 +1,29 @@
+@import ../sass/k-sass-core
+
+///
+/// Default BN-SAS-CORE configuration settings.
+/// @:Option: with "_" will be compile to !important
+/// @:null: with null to leave the value
+///
+
+.breadcrumb
+  padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal
+  margin-bottom: $spacer-y
+  list-style: none
+  background-color: $breadcrumb-bg
+
+  +border-radius($border-radius)
+
+  +clearfix
+
+  > li
+    float: left
+
+    + li::before
+      padding-right: .5rem
+      padding-left: .5rem
+      color: $breadcrumb-divider-color
+      content: "#{$breadcrumb-divider}"
+
+  > .active
+    color: $breadcrumb-active-color
