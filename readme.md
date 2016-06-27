@@ -16,7 +16,19 @@ There are many mixins are made by developers, to help you when working with Sass
 * MIT License
 
 ===============================
+#Install
 
+***Via Bower:***
+```
+bower install --save k-sass-core
+```
+
+***Via NPM:***
+```
+npm install --save-dev k-sass-core
+```
+
+===============================
 ***SASS type:***
 
 ```sass
