@@ -1,4 +1,11 @@
 # K-SASS-CORE 
+
+If you use Sass in your development workflow, you know the importance of mixins. When you see some things that are written repeatedly and tediously in CSS, that’s where mixins can help you prevent repetitive work. A mixin contains CSS declarations that you can reuse throughout your site.
+
+There are many mixins are made by developers, to help you when working with Sass in your development. Most cover things that often repetitive in CSS. From adapting across multiple browsers to creating buttons, animations and transition effects, find this and more in the following K-SASS-CORE mixin libraries you should get for your Sass development.
+
+
+* BN-SASS-CORE change name to K-SASS-CORE 
 * BN-SASS-CORE v2.0.3
 * BN-SASS-CORE is just a library.
 * BN-SASS-CORE requires NODE-SASS. If your OS is older, this version may not compile.
