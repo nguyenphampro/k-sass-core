@@ -1,0 +1,10 @@
+///
+/// Grid settings.
+///
+
+=get-bt-val($name: null, $val: null, $key: null, $set: null)
+    @each $breakpoint in map-keys($grid-breakpoints)
+        @include media-breakpoint-up($breakpoint)
+            .#{$name}-#{$breakpoint}-#{$val}
+                #{$key}: #{$set}
+
