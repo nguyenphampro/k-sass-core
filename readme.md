@@ -35,7 +35,7 @@ ___
 @import bower_components/k-sass-core/sass/k-sass-core
 ```
 
-### Include Bootstrap
+##### Include Bootstrap
 
 ```
 @import bower_components/k-sass-core/sass/k-sass-core-with-bootstrap
@@ -44,6 +44,13 @@ ___
 #Wiki docs
 
 https://github.com/baonguyenyam/k-sass-core/wiki/Welcome-to-K-SASS-CORE
+
+#####Lists
+[**Border-Radius-Tag**](https://github.com/baonguyenyam/k-sass-core/wiki/Border-Radius-Tag)
+[**Border-Tag**](https://github.com/baonguyenyam/k-sass-core/wiki/Border-Tag)
+[**Margin-Tag**](https://github.com/baonguyenyam/k-sass-core/wiki/Margin-Tag)
+[**Padding-Tag**](https://github.com/baonguyenyam/k-sass-core/wiki/Padding-Tag)
+
 
 ## Licence
 
