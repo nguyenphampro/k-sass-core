@@ -46,7 +46,7 @@ ___
 https://github.com/baonguyenyam/k-sass-core/wiki/Welcome-to-K-SASS-CORE
 
 #####Lists
-[**Border-Radius-Tag**](https://github.com/baonguyenyam/k-sass-core/wiki/Border-Radius-Tag)
+* [**Border-Radius-Tag**](https://github.com/baonguyenyam/k-sass-core/wiki/Border-Radius-Tag)
 
 * [**Border-Tag**](https://github.com/baonguyenyam/k-sass-core/wiki/Border-Tag)
 
@@ -54,7 +54,7 @@ https://github.com/baonguyenyam/k-sass-core/wiki/Welcome-to-K-SASS-CORE
 
 * [**Padding-Tag**](https://github.com/baonguyenyam/k-sass-core/wiki/Padding-Tag)
 
-* [**Colors-Tag**]https://github.com/baonguyenyam/k-sass-core/wiki/Colors-Tag)
+* [**Colors-Tag**](https://github.com/baonguyenyam/k-sass-core/wiki/Colors-Tag)
 
 ## Licence
 
