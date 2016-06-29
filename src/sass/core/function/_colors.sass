@@ -21,7 +21,7 @@
 
 // Set color lighten or darken
 @function color-up($co, $amount:0)
-    $tmp: lighten(#{$co}, $amount)
+    $tmp: lighten($co, $amount)
     @return $tmp
 @function color-down($co, $amount:0)
     $tmp: darken($co, $amount)
