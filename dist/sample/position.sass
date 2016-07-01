@@ -1,0 +1,40 @@
+@import ../sass/k-sass-core-only
+
+///
+/// Default BN-SAS-CORE configuration settings.
+/// @Type: +pos([options]) OR +position([options])
+/// @:Option: with "_" will be compile to !important
+/// @:null: with null to leave the value
+///
+.sample-0
+    /*+pos(relative, 6px 3px 4px 6px)*/
+    +pos(relative, 6px 3px 4px 6px)
+
+.sample-1
+    /*+pos(null, 5px 4px_)*/
+    +pos(null, 5px 4px_)
+
+.sample-2
+    /*+pos(null, 1rem null 3rem_)*/
+    +pos(null, 1rem null 3rem_)
+
+.sample-3
+    /*+pos(null, null 7px 0_ 3rem_)*/
+    +pos(null, null 7px 0_ 3rem_)
+
+.sample-4
+    /*+pos(initial, 5px 3px null null)*/
+    +pos(initial, 5px 3px null null)
+
+.sample-5
+    /*+position(absolute, 4px_)*/
+    +position(absolute, 4px_)
+
+.sample-6
+    /*+pos(fixed, 1rem null null 0)*/
+    +pos(fixed, 1rem null null 0)
+
+.sample-7
+    /*+pos(fix, null 1px 0_)*/
+    +pos(fix, null 1px 0_)
+

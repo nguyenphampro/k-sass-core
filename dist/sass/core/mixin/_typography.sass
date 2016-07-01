@@ -1,0 +1,85 @@
+// TYPOGRAPHY
+=text-wrap($width: 100%, $display: inline-block)
+  display: $display
+  max-width: $width
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+  word-wrap: normal
+
+// Clearfix
+=clearfix()
+  @extend %clearfix
+
+// Visually hidden
+=visually-hidden()
+  @extend %visuallyhidden
+
+// Get Rem
+=setrem($size)
+  font-size: $size
+  font-size: calculateRem($size)
+
+// Fonts 
+=font-face($fontFamily: 'myFont', $path: "../fonts/", $name: "myFont")
+  @font-face
+    font-family: '#{$fontFamily}'
+    src: url(#{$path+$name}.eot) 
+    src: url(#{$path+$name}.eot?#iefix) format('embedded-opentype'), 
+    url(#{$path+$name}.woff) format('woff'),
+    url(#{$path+$name}.woff2) format('woff2'),
+    url(#{$path+$name}.ttf) format('truetype'),
+    url(#{$path+$name}.svg##{$fontFamily}) format('svg')
+    font-weight: normal
+    font-style: normal
+
+// Set Center 
+=set-center()
+  +transform(translateX(-50%) translateY(-50%)) 
+  +pos(abs,50% null null 50%)
+
+// Set Full Width
+=full-width
+  min-width: 100vw
+  min-height: 100vh
+
+// Set Padding 
+=fz ($fontsize:1rem)
+  font-size: $fontsize
+
+// Set Padding 
+=fw ($fontweight:400)
+  font-weight: $fontweight
+
+// Set Padding 
+=lh ($lineheight:0)
+  line-height: $lineheight
+
+/// Opacity
+=opacity($opacity: 0.5)
+  $opacityMultiplied: $opacity * 100
+  filter: alpha(opacity = $opacityMultiplied)
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $opacityMultiplied + ")"
+  +bn-prefix("opacity", $opacity)
+
+// Placeholder
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+
+// Selection
+=selection
+  &::selection
+    @content
+  &:-moz-selection
+    @content
+  &::-moz-selection
+    @content
+  &:-ms-selection
+    @content

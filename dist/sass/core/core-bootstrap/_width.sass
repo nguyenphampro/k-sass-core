@@ -1,0 +1,8 @@
+///
+/// width settings.
+///
+
+$typeswidth: 0
+@while $typeswidth < 105
+    +get-bt-val(w, #{$typeswidth}, width, #{$typeswidth+%})
+    $typeswidth: $typeswidth + 5

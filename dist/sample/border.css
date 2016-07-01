@@ -1,0 +1,47 @@
+.sample-0 {
+  /*+bor(null, null, '5%')*/
+  border: solid transparent 5%;
+}
+
+.sample-1 {
+  /*+bor(null, dashed color(main), 5px 4px_)*/
+  border-top: dashed #795d9c 5px;
+  border-right: dashed #795d9c 4px !important;
+  border-bottom: dashed #795d9c 5px;
+  border-left: dashed #795d9c 4px !important;
+}
+
+.sample-2 {
+  /*+bor(null, non, 1rem 2rem 3rem_)*/
+  border-top: none 1rem;
+  border-right: none 2rem;
+  border-bottom: none 3rem !important;
+}
+
+.sample-3 {
+  /*+bor(null, null, 2px 7px 0_ 3rem_)*/
+  border-top: solid transparent 2px;
+  border-right: solid transparent 7px;
+  border-bottom: solid transparent 0 !important;
+  border-left: solid transparent 3rem !important;
+}
+
+.sample-4 {
+  /*+bor(top, solid #345, 5px)*/
+  border-top: solid #345 5px;
+}
+
+.sample-5 {
+  /*+border(bottom, das red, 4px_)*/
+  border-bottom: dashed red 4px !important;
+}
+
+.sample-6 {
+  /*+bor(left, null, calc(100% - 3rem))*/
+  border-left: solid transparent calc(100% - 3rem);
+}
+
+.sample-7 {
+  /*+bor(right, null, 0_)*/
+  border-right: dotted black 0 !important;
+}

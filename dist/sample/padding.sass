@@ -1,0 +1,36 @@
+@import ../sass/k-sass-core-only
+
+///
+/// Default BN-SAS-CORE configuration settings.
+/// @Type: +pad([options]) OR +padding([options])
+/// @:Option: with "_" will be compile to !important
+/// @:null: with null to leave the value
+///
+
+.sample-0
+    /*+pad(0 0_ 3rem_)*/
+    +pad(0 0_ 3rem_)
+
+.sample-1
+    /*+pad(2rem_ 0_ 3rem_ 0_)*/
+    +pad(2rem_ 0_ 3rem_ 0_)
+
+.sample-2
+    /*+pad(2rem_ 2px_ 3rem_ 2px_)*/
+    +pad(2rem_ 2px_ 3rem_ 2px_)
+
+.sample-3
+    /*+pad(0_ 0_ 2px 2px)*/
+    +pad(0_ 0_ 2px 2px)
+
+.sample-4
+    /*+pad(2px 0_ 0_ 2px)*/
+    +pad(2px 0_ 0_ 2px)
+
+.sample-5
+    /*+padgin(1rem 1rem 0_ 0_)*/
+    +padding(1rem 1rem 0_ 0_)
+
+.sample-6
+    /*+pad(0_ 2px_)*/
+    +pad(0_ 2px_)

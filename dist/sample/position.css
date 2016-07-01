@@ -1,0 +1,57 @@
+.sample-0 {
+  /*+pos(relative, 6px 3px 4px 6px)*/
+  position: relative;
+  top: 6px;
+  right: 3px;
+  bottom: 4px;
+  left: 6px;
+}
+
+.sample-1 {
+  /*+pos(null, 5px 4px_)*/
+  position: initial;
+  top: 5px;
+  right: 4px !important;
+}
+
+.sample-2 {
+  /*+pos(null, 1rem null 3rem_)*/
+  position: initial;
+  top: 1rem;
+  bottom: 3rem !important;
+}
+
+.sample-3 {
+  /*+pos(null, null 7px 0_ 3rem_)*/
+  position: initial;
+  right: 7px;
+  bottom: 0 !important;
+  left: 3rem !important;
+}
+
+.sample-4 {
+  /*+pos(initial, 5px 3px null null)*/
+  position: initial;
+  top: 5px;
+  right: 3px;
+}
+
+.sample-5 {
+  /*+position(absolute, 4px_)*/
+  position: absolute;
+  top: 4px !important;
+}
+
+.sample-6 {
+  /*+pos(fixed, 1rem null null 0)*/
+  position: fixed;
+  top: 1rem;
+  left: 0;
+}
+
+.sample-7 {
+  /*+pos(fix, null 1px 0_)*/
+  position: fixed;
+  right: 1px;
+  bottom: 0 !important;
+}
