@@ -40,10 +40,12 @@ config:
   styles: 
     lang: "sass"
     assets: "sample"
+    assetscore: "core"
     root: "sample"
     css: "styles/css"
     less: "styles/less"
     sass: "sample"
+    core: "core"
     stylus: "styles/stylus"
   ignore: 
     copy: "{templates,templates/**}"
