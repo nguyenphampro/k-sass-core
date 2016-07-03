@@ -69,7 +69,7 @@ gulp.task('test', function(cb) {
         'copy',
         'csscomb',
         'jade',
-        // 'browserSync',
+        'browserSync',
         'watch',
         cb
     );
