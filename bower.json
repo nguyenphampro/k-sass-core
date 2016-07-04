@@ -1,23 +1,23 @@
 {
-  "name": "K-SASS_CORE",
-  "description": "K-SASS_CORE: An SASS Lib",
-  "main": "",
-  "authors": [
-    "Bao Nguyen"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "K-SASS-CORE"
-  ],
-  "homepage": "https://github.com/baonguyenyam/k-sass-core",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "v4.0.0-alpha.2"
-  }
+    "name": "K-SASS-CORE",
+    "description": "K-SASS-CORE: An SASS Lib",
+    "main": "",
+    "authors": [
+        "Bao Nguyen"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "K-SASS-CORE"
+    ],
+    "homepage": "https://github.com/baonguyenyam/k-sass-core",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "v4.0.0-alpha.2"
+    }
 }

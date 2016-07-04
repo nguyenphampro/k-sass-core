@@ -1,8 +1,11 @@
 {
-  "name": "K-SASS-CORE",
-  "version": "0.0.1",
+  "name": "k-sass-core",
+  "version": "2.0.3",
   "description": "K-SASS_CORE: An SASS Lib",
-  "repository": "https://github.com/baonguyenyam/k-sass-core.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baonguyenyam/k-sass-core.git"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=0.12.0"
@@ -85,5 +88,14 @@
     "bootstrap": "^4.0.0-alpha.2",
     "node-sass": "^3.8.0",
     "sass": "^0.5.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/baonguyenyam/k-sass-core/issues"
+  },
+  "homepage": "https://github.com/baonguyenyam/k-sass-core#readme",
+  "main": "gulpfile.babel.js",
+  "keywords": [
+    "K-SASS-CORE"
+  ],
+  "author": "BaoNguyen <baonguyenyam@gmail.com> (http://baonguyenyam.github.io/)"
 }

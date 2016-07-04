@@ -7,6 +7,7 @@ import gulpif from 'gulp-if';
 module.exports = function(gulp, setgulp, plugins, config, target, browserSync) {
     let url = config;
     let dest = path.join(target, url.styles.assets);
+    let destcore = path.join(target, url.styles.assetscore);
     let lang = url.styles.lang;
 
     // Run task
@@ -52,6 +53,27 @@ module.exports = function(gulp, setgulp, plugins, config, target, browserSync) {
                 .pipe(plugins.postcss([autoprefixer(autoprefixerOpts)]))
                 .pipe(gulpif(!setgulp.production, plugins.sourcemaps.write('./')))
                 .pipe(gulp.dest(dest))
+                .pipe(browserSync.stream({
+                    match: '**/*.css'
+                }));
+
+                gulp.src([
+                    path.join(url.source, url.styles.core, '**.{sass,scss}')
+                ])
+                .pipe(plugins.plumber())
+                .pipe(gulpif(!setgulp.production, plugins.sourcemaps.init()))
+                .pipe(plugins.sass({
+                    outputStyle: 'expanded',
+                    precision: 10,
+                    includePaths: [
+                        // 'node_modules/ionic-angular/',
+                        // 'node_modules/ionicons/dist/scss',
+                        path.join(url.source, url.styles.sass)
+                    ]
+                }).on('error', plugins.sass.logError))
+                .pipe(plugins.postcss([autoprefixer(autoprefixerOpts)]))
+                .pipe(gulpif(!setgulp.production, plugins.sourcemaps.write('./')))
+                .pipe(gulp.dest(destcore))
                 .pipe(browserSync.stream({
                     match: '**/*.css'
                 }));

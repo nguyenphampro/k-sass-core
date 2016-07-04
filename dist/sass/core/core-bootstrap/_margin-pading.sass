@@ -1,0 +1,17 @@
+///
+/// margin-pading settings.
+///
+
+@for $i from 0 through 50
+    +get-bt-val(mrt, #{$i}r, margin-top, #{$i}rem)
+    +get-bt-val(mrb, #{$i}r, margin-bottom, #{$i}rem)
+    +get-bt-val(pdl, #{$i}r, padding-left, #{$i}rem)
+    +get-bt-val(pdr, #{$i}r, padding-right, #{$i}rem)
+
+$typesmrpd: 0
+@while $typesmrpd < 205
+    +get-bt-val(mrt, #{$typesmrpd}, margin-top, #{$typesmrpd}px)
+    +get-bt-val(mrb, #{$typesmrpd}, margin-bottom, #{$typesmrpd}px)
+    +get-bt-val(pdl, #{$typesmrpd}, padding-left, #{$typesmrpd}px)
+    +get-bt-val(pdr, #{$typesmrpd}, padding-right, #{$typesmrpd}px)
+    $typesmrpd: $typesmrpd + 5

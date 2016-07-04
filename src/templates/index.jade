@@ -24,104 +24,74 @@ html(dir='ltr', lang='en')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
 		meta(name='format-detection', content='telephone=no')
 		meta(name='msapplication-tap-highlight', content='no')
-		title KMAPS - Bao Nguyen - Bảo Nguyên - 0969689893 - Brands Designer/Web Developer/Apps Developer/Photograper/Front-End Developer 
+		title K-SASS-CORE - Bao Nguyen - Bảo Nguyên - 0969689893 - Brands Designer/Web Developer/Apps Developer/Photograper/Front-End Developer 
 		link(rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css")
-		style.
-			.gmap{
-				width: 100%;
-				min-height: 400px;
-			}
-			#editor {
-					min-height: 50px;
-					height: auto;
-					width: 100%;
-					padding: 1rem;
-					border-radius: 3px
-			}
 	body
 
-		.container
-			h1.display-4(style="margin:2rem 0;") K-Gmaps 
-			.jumbotron
-				#gmap_canvas.gmap
-					.Lat 10.359352
-					.Lng 106.673089
-					.MarginLat -0.0050
-					.MarginLng 0
-					.imgMap images/logo_map.png
-					address 211A Ngô Tùng Châu, Gò Công, Tiền Giang, Việt Nam
-					.infoWindow
-						h3 Bảo Nguyên
-						p
-							strong Tại Tiền Giang :
-							br
-							|  211A Ngô Tùng Châu, KP.3, P.1, Gò Công
-							br
-							|  Email: info@baonguyenyam.com
-							br
-							|  Tel : 
-							a(href='tel:+840000000', onclick="_gaq.push(['_trackEvent', 'Mobile', 'Click to Call'])") 0908.000.000
-					.mapStyle 1
-					.mapZoom 15
-					.scrollwheel false
-					.draggable true
-					.disableDefaultUI true
-			.row.marketing
-				.col-lg-12
-					h4 JS
-					pre.prettyprint.lang-js.
-						$(document).ready(function() {
-						  $('#gmap_canvas').kmaps();
-						});
-			.row.marketing
-				.col-lg-12
-					h4 HTML
-					pre#quine.prettyprint.lang-html.
-						<div id="gmap_canvas" class="gmap">
-						  <div class="Lat">10.359352</div>
-						  <div class="Lng">106.673089</div>
-						  <div class="MarginLat">-0.0050</div>
-						  <div class="MarginLng">0</div>
-						  <div class="imgMap">images/logo_map.png</div>
-						    <address>211A Ngô Tùng Châu, Gò Công, Tiền Giang, Việt Nam</address>
-						  <div class="infoWindow">
-						    <h3>Bảo Nguyên</h3>
-						    <p><strong>Tại Tiền Giang :</strong><br> 211A Ngô Tùng Châu, KP.3, P.1, Gò Công<br> Email: info@baonguyenyam.com<br> Tel : <a href="tel:+840000000" onclick="_gaq.push(['_trackEvent', 'Mobile', 'Click to Call'])">0908.000.000</a></p>
-						  </div>
-						  <div class="mapStyle">1</div>
-						  <div class="mapZoom">15</div>
-						  <div class="scrollwheel">false</div>
-						  <div class="draggable">true</div>
-						  <div class="disableDefaultUI">true</div>
-						</div>
-			footer.footer.text-center
-				p © BaoNguyen 2014
+		.container 
+			.row
+				.col-md-12
+					h1.display-4(style="margin:2rem 0;") K-SASS-CORE
+					.row
+						.col-sm-6
+							p If you use Sass in your development workflow, you know the importance of mixins. When you see some things that are written repeatedly and tediously in CSS, that’s where mixins can help you prevent repetitive work. A mixin contains CSS declarations that you can reuse throughout your site.
+							p There are many mixins are made by developers, to help you when working with Sass in your development. Most cover things that often repetitive in CSS. From adapting across multiple browsers to creating buttons, animations and transition effects, find this and more in the following K-SASS-CORE mixin libraries you should get for your Sass development.
+							h4 Github
+							p 
+								a(href="https://github.com/baonguyenyam/k-sass-core") https://github.com/baonguyenyam/k-sass-core
+							h4 Wiki docs
+							p 
+								a(href="https://github.com/baonguyenyam/k-sass-core/wiki/Welcome-to-K-SASS-CORE") https://github.com/baonguyenyam/k-sass-core/wiki/Welcome-to-K-SASS-CORE
 
+						.col-sm-6(style="text-align:right;")
+							p 
+								img.class(src="images/img_01.png", alt="alt")
+						
+					hr 
+					h3(style="margin:2rem 0;") Example 
+					hr 
+					h5 SASS:
+					pre.prettyprint.lang-sass.
+						.sample-0
+						    +padding(2rem_ '0 !important' 3rem_ 0)
+					h5 CSS compile:
+					pre.prettyprint.lang-css.
+						.sample-0 {
+						    margin-top: 2rem !important;
+						    margin-right: 0 !important;
+						    margin-bottom: 3rem !important;
+						    margin-left: 0;
+						}
+
+					hr 
+					h5 SASS:
+					pre.prettyprint.lang-sass.
+						.sample-1
+						    +border-radius('50%_') 
+					h5 CSS compile:
+					pre.prettyprint.lang-css.
+						.sample-1 {
+						    border-radius: 50% !important;
+						}
+
+					hr 
+					h5 SASS:
+					pre.prettyprint.lang-sass.
+						.sample-2
+						    +border(bottom, das red, 'calc(100% - 3rem)_') 
+					h5 CSS compile:
+					pre.prettyprint.lang-css.
+						.sample-2 {
+						    border-bottom: dashed red calc(100% - 3rem) !important;
+						}
+
+					p And more...
+
+
+			footer.footer.text-center
+				p © BaoNguyen 
+
+		
+		
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
-		script(src='https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js')
-		script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false')
-		script(src='js/kmaps.js')
-		script.
-			//<![CDATA[
-			(function () {
-			  function html(s) {
-			    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-			  }
-			  var newHTML = $('#quine').html();
-			 
-			  var quineHtml = html($('#quine').html());
-			 
-			  // Highlight the operative parts:
-			  quineHtml = quineHtml.replace(
-			    /&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
-			    '<span class="operative">$&</span>');
-			 
-			  document.getElementById("quine").innerHTML = quineHtml;
-			})();
-			//]]>
-			// READY ////////////////////////////////////////////
-			$(document).ready(function() {
-					if ($('#gmap_canvas').length) {
-							$('#gmap_canvas').kmaps();
-					}
-			});
+		script(src='https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst')

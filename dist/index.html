@@ -25,106 +25,67 @@ Demo Web-App: http://baonguyenyam.herokuapp.com/
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
-    <title>KMAPS - Bao Nguyen - Bảo Nguyên - 0969689893 - Brands Designer/Web Developer/Apps Developer/Photograper/Front-End Developer </title>
+    <title>K-SASS-CORE - Bao Nguyen - Bảo Nguyên - 0969689893 - Brands Designer/Web Developer/Apps Developer/Photograper/Front-End Developer </title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
-    <style>
-      .gmap{
-      	width: 100%;
-      	min-height: 400px;
-      }
-      #editor {
-      		min-height: 50px;
-      		height: auto;
-      		width: 100%;
-      		padding: 1rem;
-      		border-radius: 3px
-      }
-    </style>
   </head>
   <body>
-    <div class="container">
-      <h1 style="margin:2rem 0" class="display-4">K-Gmaps </h1>
-      <div class="jumbotron">
-        <div id="gmap_canvas" class="gmap">
-          <div class="Lat">10.359352</div>
-          <div class="Lng">106.673089</div>
-          <div class="MarginLat">-0.0050</div>
-          <div class="MarginLng">0</div>
-          <div class="imgMap">images/logo_map.png</div>
-          <address>211A Ngô Tùng Châu, Gò Công, Tiền Giang, Việt Nam</address>
-          <div class="infoWindow">
-            <h3>Bảo Nguyên</h3>
-            <p><strong>Tại Tiền Giang :</strong><br> 211A Ngô Tùng Châu, KP.3, P.1, Gò Công<br> Email: info@baonguyenyam.com<br> Tel : <a href="tel:+840000000" onclick="_gaq.push(['_trackEvent', 'Mobile', 'Click to Call'])">0908.000.000</a></p>
+    <div class="container"> 
+      <div class="row">
+        <div class="col-md-12">
+          <h1 style="margin:2rem 0" class="display-4">K-SASS-CORE</h1>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>If you use Sass in your development workflow, you know the importance of mixins. When you see some things that are written repeatedly and tediously in CSS, that’s where mixins can help you prevent repetitive work. A mixin contains CSS declarations that you can reuse throughout your site.</p>
+              <p>There are many mixins are made by developers, to help you when working with Sass in your development. Most cover things that often repetitive in CSS. From adapting across multiple browsers to creating buttons, animations and transition effects, find this and more in the following K-SASS-CORE mixin libraries you should get for your Sass development.</p>
+              <h4>Github</h4>
+              <p> <a href="https://github.com/baonguyenyam/k-sass-core">https://github.com/baonguyenyam/k-sass-core</a></p>
+              <h4>Wiki docs</h4>
+              <p> <a href="https://github.com/baonguyenyam/k-sass-core/wiki/Welcome-to-K-SASS-CORE">https://github.com/baonguyenyam/k-sass-core/wiki/Welcome-to-K-SASS-CORE</a></p>
+            </div>
+            <div style="text-align:right" class="col-sm-6">
+              <p> <img src="images/img_01.png" alt="alt" class="class"></p>
+            </div>
           </div>
-          <div class="mapStyle">1</div>
-          <div class="mapZoom">15</div>
-          <div class="scrollwheel">false</div>
-          <div class="draggable">true</div>
-          <div class="disableDefaultUI">true</div>
-        </div>
-      </div>
-      <div class="row marketing">
-        <div class="col-lg-12">
-          <h4>JS</h4>
-          <pre class="prettyprint lang-js">$(document).ready(function() {
-  $('#gmap_canvas').kmaps();
-});</pre>
-        </div>
-      </div>
-      <div class="row marketing">
-        <div class="col-lg-12">
-          <h4>HTML</h4>
-          <pre id="quine" class="prettyprint lang-html"><div id="gmap_canvas" class="gmap">
-  <div class="Lat">10.359352</div>
-  <div class="Lng">106.673089</div>
-  <div class="MarginLat">-0.0050</div>
-  <div class="MarginLng">0</div>
-  <div class="imgMap">images/logo_map.png</div>
-    <address>211A Ngô Tùng Châu, Gò Công, Tiền Giang, Việt Nam</address>
-  <div class="infoWindow">
-    <h3>Bảo Nguyên</h3>
-    <p><strong>Tại Tiền Giang :</strong><br> 211A Ngô Tùng Châu, KP.3, P.1, Gò Công<br> Email: info@baonguyenyam.com<br> Tel : <a href="tel:+840000000" onclick="_gaq.push(['_trackEvent', 'Mobile', 'Click to Call'])">0908.000.000</a></p>
-  </div>
-  <div class="mapStyle">1</div>
-  <div class="mapZoom">15</div>
-  <div class="scrollwheel">false</div>
-  <div class="draggable">true</div>
-  <div class="disableDefaultUI">true</div>
-</div></pre>
+          <hr>
+          <h3 style="margin:2rem 0">Example </h3>
+          <hr>
+          <h5>SASS:</h5>
+          <pre class="prettyprint lang-sass">.sample-0
+    +padding(2rem_ '0 !important' 3rem_ 0)</pre>
+          <h5>CSS compile:</h5>
+          <pre class="prettyprint lang-css">.sample-0 {
+    margin-top: 2rem !important;
+    margin-right: 0 !important;
+    margin-bottom: 3rem !important;
+    margin-left: 0;
+}
+</pre>
+          <hr>
+          <h5>SASS:</h5>
+          <pre class="prettyprint lang-sass">.sample-1
+    +border-radius('50%_') </pre>
+          <h5>CSS compile:</h5>
+          <pre class="prettyprint lang-css">.sample-1 {
+    border-radius: 50% !important;
+}
+</pre>
+          <hr>
+          <h5>SASS:</h5>
+          <pre class="prettyprint lang-sass">.sample-2
+    +border(bottom, das red, 'calc(100% - 3rem)_') </pre>
+          <h5>CSS compile:</h5>
+          <pre class="prettyprint lang-css">.sample-2 {
+    border-bottom: dashed red calc(100% - 3rem) !important;
+}
+</pre>
+          <p>And more...</p>
         </div>
       </div>
       <footer class="footer text-center">
-        <p>© BaoNguyen 2014</p>
+        <p>© BaoNguyen </p>
       </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-    <script src="js/kmaps.js"></script>
-    <script>
-      //<![CDATA[
-      (function () {
-        function html(s) {
-          return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-        }
-        var newHTML = $('#quine').html();
-       
-        var quineHtml = html($('#quine').html());
-       
-        // Highlight the operative parts:
-        quineHtml = quineHtml.replace(
-          /&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
-          '<span class="operative">$&</span>');
-       
-        document.getElementById("quine").innerHTML = quineHtml;
-      })();
-      //]]>
-      // READY ////////////////////////////////////////////
-      $(document).ready(function() {
-      		if ($('#gmap_canvas').length) {
-      				$('#gmap_canvas').kmaps();
-      		}
-      });
-    </script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"></script>
   </body>
 </html>

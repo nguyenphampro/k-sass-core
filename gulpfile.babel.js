@@ -56,7 +56,7 @@ gulp.task('product', function(cb) {
         'cssmin',
         'jade',
         'header',
-        'browserSync',
+        // 'browserSync',
         'watch',
         cb
     );
@@ -65,8 +65,8 @@ gulp.task('product', function(cb) {
 // Server tasks with watch
 gulp.task('test', function(cb) {
     runSequence(
-        'compass',   
-        'copy',    
+        'compass',
+        'copy',
         'csscomb',
         'jade',
         'browserSync',
