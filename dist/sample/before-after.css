@@ -1,0 +1,16 @@
+.sample-1:before {
+  content: '';
+  display: block;
+}
+
+.sample-2:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 20%;
+}
+
+.sample-1:before {
+  content: '';
+  display: initial;
+}
