@@ -4,7 +4,7 @@ If you use Sass in your development workflow, you know the importance of mixins.
 
 There are many mixins are made by developers, to help you when working with Sass in your development. Most cover things that often repetitive in CSS. From adapting across multiple browsers to creating buttons, animations and transition effects, find this and more in the following K-SASS-CORE mixin libraries you should get for your Sass development.
 
-![k-SASS-CORE](https://github.com/baonguyenyam/k-sass-core/blob/master/dist/images/img_01.png "k-SASS-CORE")
+![k-SASS-CORE](https://raw.githubusercontent.com/baonguyenyam/k-sass-core/master/dist/images/img_01.png "k-SASS-CORE")
 
 
 * BN-SASS-CORE change name to K-SASS-CORE 
