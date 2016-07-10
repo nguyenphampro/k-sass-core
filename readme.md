@@ -16,6 +16,10 @@ There are many mixins are made by developers, to help you when working with Sass
 * MIT License
 
 ===============================
+
+## Demo 
+http://baonguyenyam.github.io/docs/k-sass-core/
+
 #Install
 
 ***Via Bower:***
