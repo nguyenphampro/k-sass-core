@@ -35,8 +35,8 @@
   background: radial-gradient(ellipse at center, $startColor $startPos, $endColor $endPos)
 
 // Animation
-=animation($str)
-  +bn-prefix("animation", $str)
+=animation($str...)
+  +bn-prefix("animation", $str...)
 
 /// Keyframes
 =keyframes($animation-name)
@@ -52,12 +52,12 @@
     @content
 
 /// Transform
-=transform($params)
-  +bn-prefix("transform", $params)
+=transform($params...)
+  +bn-prefix("transform", $params...)
 
 /// Transform-Origin
-=transform-origin($params)
-  +bn-prefix("transform-origin", $params)
+=transform-origin($params...)
+  +bn-prefix("transform-origin", $params...)
 
 // Transform-Style
 =transform-style($style: preserve-3d)
