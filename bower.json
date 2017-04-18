@@ -1,6 +1,7 @@
 {
     "name": "k-sass-core",
     "description": "k-sass-core: An SASS Lib",
+    "version": "3.0.0",
     "main": "",
     "authors": [
         "Bao Nguyen"
