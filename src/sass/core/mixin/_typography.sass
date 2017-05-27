@@ -31,12 +31,12 @@
   font-size: $size
   font-size: calculateRem($size)
 
-// Fonts 
+// Fonts
 =font-face($fontFamily: 'myFont', $path: "../fonts/", $name: "myFont")
   @font-face
     font-family: '#{$fontFamily}'
-    src: url(#{$path+$name}.eot) 
-    src: url(#{$path+$name}.eot?#iefix) format('embedded-opentype'), 
+    src: url(#{$path+$name}.eot)
+    src: url(#{$path+$name}.eot?#iefix) format('embedded-opentype'),
     url(#{$path+$name}.woff) format('woff'),
     url(#{$path+$name}.woff2) format('woff2'),
     url(#{$path+$name}.ttf) format('truetype'),
@@ -44,9 +44,9 @@
     font-weight: normal
     font-style: normal
 
-// Set Center 
+// Set Center
 =set-center()
-  +transform(translateX(-50%) translateY(-50%)) 
+  +transform(translateX(-50%) translateY(-50%))
   +pos(abs,50% null null 50%)
 
 // Set Full Width
@@ -61,15 +61,15 @@
   height: 100%
 
 
-// Set Padding 
+// Set Padding
 =fz ($fontsize:1rem)
   font-size: $fontsize
 
-// Set Padding 
+// Set Padding
 =fw ($fontweight:400)
   font-weight: $fontweight
 
-// Set Padding 
+// Set Padding
 =lh ($lineheight:0)
   line-height: $lineheight
 
@@ -90,7 +90,7 @@
   text-shadow: $x
 
 // Box shadow
-=box-shadow($x: 2px 2px 5px rgba(0, 0, 0, 0.4), $inset: null)
+=box-shadows($x: 2px 2px 5px rgba(0, 0, 0, 0.4), $inset: null)
   @if $inset != ""
     +bn-prefix("box-shadow", $inset $x )
   @else
