@@ -1,15 +1,30 @@
 {
+<<<<<<< HEAD
     "name": "k-sass-core",
     "description": "k-sass-core: An SASS Lib",
     "version": "3.0.0",
+=======
+		"name": "k-sass-core",
+		"version": "5.0.0",
+		"description": "k-sass-core: An SASS Lib, thư viện sass cho frontend developer",
+>>>>>>> master
     "main": "",
     "authors": [
-        "Bao Nguyen"
+        "BaoNguyen <baonguyenyam@gmail.com> (http://baonguyenyam.github.io/)"
     ],
     "license": "MIT",
     "keywords": [
+<<<<<<< HEAD
         "k-sass-core"
     ],
+=======
+			"k-sass-core",
+			"sass core",
+			"sass mixin",
+			"sass function",
+			"sass variables"
+		],
+>>>>>>> master
     "homepage": "https://github.com/baonguyenyam/k-sass-core",
     "ignore": [
         "**/.*",
@@ -17,8 +32,13 @@
         "bower_components",
         "test",
         "tests"
+<<<<<<< HEAD
     ],
     "dependencies": {
         "bootstrap": "^v4.0.0-alpha.2"
     }
 }
+=======
+    ]
+}
+>>>>>>> master
