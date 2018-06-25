@@ -1,11 +1,11 @@
-config: 
-  concat: 
-    js: 
+config:
+  concat:
+    js:
       - "bower_components/jquery/dist/jquery.js"
-    css: 
+    css:
       - "bower_components/animate.css/animate.css"
   title: "Mobile App"
-  author: 
+  author:
     email: "baonguyenyam@gmail.com"
     name: "BaoNguyen"
     link: "https://github.com/baonguyenyam"
@@ -26,18 +26,18 @@ config:
   data: "data"
   blank: "_blank"
   images: "img"
-  layouts: 
+  layouts:
     assets: "templates"
     jade: "templates"
     hamber: "templates"
-  scripts: 
+  scripts:
     lang: "js"
     assets: "js"
     root: "scripts"
     typescript: "scripts/typescript"
     javascript: "scripts"
     coffee: "scripts/coffee"
-  styles: 
+  styles:
     lang: "sass"
     assets: "sample"
     assetscore: "core"
@@ -47,7 +47,7 @@ config:
     sass: "sample"
     core: "core"
     stylus: "styles/stylus"
-  ignore: 
+  ignore:
     copy: "{templates,templates/**}"
   host: "127.0.0.1"
   port: "8888"

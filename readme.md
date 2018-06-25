@@ -8,7 +8,7 @@ There are many mixins are made by developers, to help you when working with Sass
 
 
 * BN-SASS-CORE change name to K-SASS-CORE 
-* BN-SASS-CORE v2.0.3
+* BN-SASS-CORE v6.0.3
 * BN-SASS-CORE is just a library.
 * BN-SASS-CORE requires NODE-SASS. If your OS is older, this version may not compile.
 * http://baonguyenyam.github.io
@@ -18,19 +18,19 @@ There are many mixins are made by developers, to help you when working with Sass
 ===============================
 
 ## Demo 
-http://baonguyenyam.github.io/docs/k-sass-core/
+http://baonguyenyam.github.io/k-sass-core/
 
 #Install
 
 ***Via Bower:***
-```
-bower install --save k-sass-core
-```
+
+> bower install --save k-sass-core
+
 
 ***Via NPM:***
-```
-npm install --save-dev k-sass-core
-```
+
+> npm install --save-dev k-sass-core
+
 ___
 
 #Include 
