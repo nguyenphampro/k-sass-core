@@ -86,11 +86,11 @@
   +bn-prefix("column-gap", $gap)
 
 // Text shadow
-=text-shadow($x: 2px 2px 5px rgba(0, 0, 0, 0.4))
+=text-sha($x: 2px 2px 5px rgba(0, 0, 0, 0.4))
   text-shadow: $x
 
 // Box shadow
-=box-shadow($x: 2px 2px 5px rgba(0, 0, 0, 0.4), $inset: null)
+=box-sha($x: 2px 2px 5px rgba(0, 0, 0, 0.4), $inset: null)
   @if $inset != ""
     +bn-prefix("box-shadow", $inset $x )
   @else

@@ -1,12 +1,3 @@
-
- ////////////////////////////////////////////////////////
- //* Bao Nguyen Apps
- //* @version v1.0
- //* @link https://github.com/baonguyenyam
- //* @license MIT
- //* @Coding by Bao Nguyen
- ////////////////////////////////////////////////////////
- 
 .rotate {
   /*+rotate(45deg)*/
   -webkit-transform: rotate(45deg);
@@ -29,6 +20,7 @@
   /*+background-gradient(#FFF, #DFDFDF)*/
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #FFF), color-stop(100%, #DFDFDF));
   background: -webkit-linear-gradient(0deg, #FFF 0%, #DFDFDF 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#FFF), to(#DFDFDF));
   background: -webkit-linear-gradient(left, #FFF 0%, #DFDFDF 100%);
   background: linear-gradient(90deg, #FFF 0%, #DFDFDF 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#DFDFDF', GradientType=0 );
@@ -38,6 +30,7 @@
   /*+background-horizontal(color(main), color(link))*/
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #795d9c), color-stop(100%, #607d8b));
   background: -webkit-linear-gradient(270deg, #795d9c 0%, #607d8b 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#795d9c), to(#607d8b));
   background: -webkit-linear-gradient(top, #795d9c 0%, #607d8b 100%);
   background: linear-gradient(180deg, #795d9c 0%, #607d8b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#795d9c', endColorstr='#607d8b', GradientType=0 );
@@ -46,8 +39,8 @@
 .background-radial {
   /*+background-radial(color(main), 0%, color(link), 100%)*/
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #795d9c), color-stop(100%, #607d8b));
-  background: -webkit-radial-gradient(center, ellipse cover, #795d9c 0%, #607d8b 100%);
-  background: -webkit-radial-gradient(center ellipse, #795d9c 0%, #607d8b 100%);
+  background: -webkit-radial-gradient(center, ellipse farthest-corner, #795d9c 0%, #607d8b 100%);
+  background: -webkit-radial-gradient(center, ellipse, #795d9c 0%, #607d8b 100%);
   background: radial-gradient(ellipse at center, #795d9c 0%, #607d8b 100%);
 }
 

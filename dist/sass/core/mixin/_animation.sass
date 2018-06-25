@@ -1,4 +1,4 @@
-// Animation 
+// Animation
 =rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0)
   +bn-prefix("transform", rotate($deg))
   filter: progid:DXImageTransform.Microsoft.Matrix( M11=#{$m11}, M12=#{$m12}, M21=#{$m21}, M22=#{$m22}, sizingMethod='auto expand')
@@ -27,11 +27,11 @@
 
 /// Background Radial
 =background-radial($startColor: #FFFFFF, $startPos: 0%, $endColor: #000000, $endPos: 100%)
-  background: -moz-radial-gradient(center, ellipse cover, $startColor $startPos, $endColor $endPos)
+  background: -moz-radial-gradient(center, ellipse farthest-corner, $startColor $startPos, $endColor $endPos)
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop($startPos, $startColor), color-stop($endPos, $endColor))
-  background: -webkit-radial-gradient(center, ellipse cover, $startColor $startPos, $endColor $endPos)
-  background: -o-radial-gradient(center, ellipse cover, $startColor $startPos, $endColor $endPos)
-  background: -ms-radial-gradient(center, ellipse cover, $startColor $startPos, $endColor $endPos)
+  background: -webkit-radial-gradient(center, ellipse farthest-corner, $startColor $startPos, $endColor $endPos)
+  background: -o-radial-gradient(center, ellipse farthest-corner, $startColor $startPos, $endColor $endPos)
+  background: -ms-radial-gradient(center, ellipse farthest-corner, $startColor $startPos, $endColor $endPos)
   background: radial-gradient(ellipse at center, $startColor $startPos, $endColor $endPos)
 
 // Animation
@@ -62,7 +62,7 @@
 // Transform-Style
 =transform-style($style: preserve-3d)
   +bn-prefix("transform-style", $style)
-  
+
 /// Transition
 =transition($properties...)
   @if length($properties) >= 1
