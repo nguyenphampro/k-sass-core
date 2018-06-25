@@ -1,0 +1,278 @@
+.background-1 {
+  background-image: url(../img/abc.svg);
+}
+
+.background-1.no-svg {
+  background-image: url(../img/abc.png);
+}
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .background-1.no-svg {
+    background-image: url(../img/abc@2x.png);
+  }
+}
+
+.background-2 {
+  background-image: url(../img/abc.svg);
+  background-size: cover;
+}
+
+.background-2.no-svg {
+  background-image: url(../img/abc.png);
+}
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .background-2.no-svg {
+    background-image: url(../img/abc@2x.png);
+  }
+}
+
+.clearfix {
+  /*+clearfix*/
+  *zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.visually-hidden {
+  /*+visually-hidden*/
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+.setrem {
+  /*+setrem(20px)*/
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.text-wrap-1 {
+  /*+text-wrap()*/
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.text-wrap-2 {
+  /*+text-wrap(160px, block)*/
+  display: block;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.set-center {
+  /*+set-center()*/
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -khtml-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.full-width-1, .parent {
+  /*+vh()*/
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.parent {
+  /*@extend .full-width-1*/
+  /*font-size: 2rem*/
+  font-size: 2rem;
+}
+
+.full-width-2 {
+  /*+full-width()*/
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.columns {
+  /*+columns(3,10)*/
+  -webkit-column-count: 3;
+  -khtml-column-count: 3;
+  -ms-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 10;
+  -khtml-column-gap: 10;
+  -ms-column-gap: 10;
+  -o-column-gap: 10;
+  column-gap: 10;
+}
+
+.text-shadow {
+  /*+text-sha()*/
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.box-shadow-1 {
+  /*+box-shadow()*/
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.box-shadow-2 {
+  /*+box-shadow(2px 2px 5px rgba(0, 0, 0, 0.4), inset)*/
+  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.triple-borders {
+  /*+triple-borders(#3C3C3C, #999, #000000, 0)*/
+  border: 1px solid #3C3C3C;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 0 1px #999, 0 0 0 2px #000000;
+  -ms-box-shadow: 0 0 0 1px #999, 0 0 0 2px #000000;
+  -o-box-shadow: 0 0 0 1px #999, 0 0 0 2px #000000;
+  box-shadow: 0 0 0 1px #999, 0 0 0 2px #000000;
+}
+
+.columns {
+  /*+columns(3,10)*/
+  -webkit-column-count: 3;
+  -khtml-column-count: 3;
+  -ms-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 10;
+  -khtml-column-gap: 10;
+  -ms-column-gap: 10;
+  -o-column-gap: 10;
+  column-gap: 10;
+}
+
+.font-size {
+  /*+fz(2rem)*/
+  font-size: 2rem;
+}
+
+.font-weight {
+  /*+fw(400)*/
+  font-weight: 400;
+}
+
+.line-height {
+  /*+lh(1.5)*/
+  line-height: 1.5;
+}
+
+.opacity {
+  /*+opacity(.5)*/
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  -webkit-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -moz-opacity: 0.5;
+  -ms-opacity: 0.5;
+  -o-opacity: 0.5;
+  opacity: 0.5;
+}
+
+/*++font-face('ABCFonts', "../fonts/", "myFont")*/
+@font-face {
+  font-family: "ABCFonts";
+  src: url(../fonts/myFont.eot);
+  src: url(../fonts/myFont.eot?#iefix) format("embedded-opentype"), url(../fonts/myFont.woff) format("woff"), url(../fonts/myFont.woff2) format("woff2"), url(../fonts/myFont.ttf) format("truetype"), url(../fonts/myFont.svg#ABCFonts) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.before {
+  /*+before(null, 50% 30px)*/
+}
+
+.before:before {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 30px;
+}
+
+.after {
+  /*+after('*', '50%_' 30px_, inline)*/
+  /*+pos(abs, 0 null null 0)*/
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.after:after {
+  content: "*";
+  display: inline;
+  width: 50% !important;
+  height: 30px !important;
+}
+
+.placeholder::-webkit-input-placeholder {
+  border: 1px;
+}
+
+.placeholder:-moz-placeholder {
+  border: 1px;
+}
+
+.placeholder::-moz-placeholder {
+  border: 1px;
+}
+
+.placeholder:-ms-input-placeholder {
+  border: 1px;
+}
+
+.selection::-moz-selection {
+  border: 1px;
+}
+
+.selection::selection {
+  border: 1px;
+}
+
+.selection:-moz-selection {
+  border: 1px;
+}
+
+.selection::-moz-selection {
+  border: 1px;
+}
+
+.selection:-ms-selection {
+  border: 1px;
+}
+
+.get-shadow {
+  font-size: 92px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  text-shadow: 1px - 1px 0 #767676, -1px 2px 1px #7a7a7a, -2px 4px 1px #7e7e7e, -3px 6px 1px #828282, -4px 8px 1px #858585, -5px 10px 1px #898989, -6px 12px 1px #8d8d8d, -7px 14px 1px #919191, -8px 16px 1px #959595, -9px 18px 1px #999999, -10px 20px 1px #9d9d9d, -11px 22px 1px #a1a0a0, -12px 24px 1px #a4a4a4, -13px 26px 1px #a8a8a8, -14px 28px 1px #acacac, -15px 30px 1px #b0b0b0, -16px 32px 1px #b4b4b4, -17px 34px 1px #b8b8b8, -18px 36px 1px #bcbcbc, -19px 38px 1px #bfbfbf, -20px 40px 1px #c3c3c3, -21px 42px 1px #c7c7c7, -22px 44px 1px #cbcbcb, -23px 46px 1px #cfcfcf, -24px 48px 1px lightgray, -25px 50px 1px #d7d7d7, -26px 52px 1px #dadada, -27px 54px 1px #dedede, -28px 56px 1px #e2e2e2, -29px 58px 1px #e6e6e6, -30px 60px 1px #eaeaea;
+  text-shadow: -1px 1.1px rgba(74, 74, 74, 0.145) , -2px 2.2px rgba(79, 79, 79, 0.14) , -3px 3.3px rgba(85, 85, 85, 0.135) , -4px 4.4px rgba(90, 90, 90, 0.13) , -5px 5.5px rgba(96, 96, 96, 0.125) , -6px 6.6px rgba(102, 102, 102, 0.12) , -7px 7.7px rgba(107, 107, 107, 0.115) , -8px 8.8px rgba(113, 113, 113, 0.11) , -9px 9.9px rgba(118, 118, 118, 0.105) , -10px 11px rgba(124, 124, 124, 0.1) , -11px 12.1px rgba(130, 130, 130, 0.095) , -12px 13.2px rgba(135, 135, 135, 0.09) , -13px 14.3px rgba(141, 141, 141, 0.085) , -14px 15.4px rgba(147, 147, 147, 0.08) , -15px 16.5px rgba(152, 152, 152, 0.075) , -16px 17.6px rgba(158, 158, 158, 0.07) , -17px 18.7px rgba(163, 163, 163, 0.065) , -18px 19.8px rgba(169, 169, 169, 0.06) , -19px 20.9px rgba(175, 175, 175, 0.055) , -20px 22px rgba(180, 180, 180, 0.05) , -21px 23.1px rgba(186, 186, 186, 0.045) , -22px 24.2px rgba(191, 191, 191, 0.04) , -23px 25.3px rgba(197, 197, 197, 0.035) , -24px 26.4px rgba(203, 203, 203, 0.03) , -25px 27.5px rgba(208, 208, 208, 0.025) , -26px 28.6px rgba(214, 214, 214, 0.02) , -27px 29.7px rgba(219, 219, 219, 0.015) , -28px 30.8px rgba(225, 225, 225, 0.01) , -29px 31.9px rgba(231, 231, 231, 0.005) , -30px 33px rgba(236, 236, 236, 0);
+}

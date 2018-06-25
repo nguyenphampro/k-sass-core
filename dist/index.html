@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>K-SASS-CORE - Bao Nguyen - Bảo Nguyên - 0969689893 - Brands Designer/Web Developer/Apps Developer/Photograper/Front-End Developer</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <style>.prettyprint{display:block;background-color:#272822;padding:1rem !important;border-radius: 5px;overflow:scroll}pre ::selection{background:#9d550f;color:#F8F8F0}pre ::-moz-selection{background:#9d550f;color:#F8F8F0}pre .nocode{background-color:none;color:#000}pre .str{color:#E6DB74}pre .kwd{color:#66D9EF}pre .com{color:#75715E}pre .typ{color:#66D9EF}pre .lit{color:#AE81FF}pre .pln,pre .pun{color:#F8F8F0}pre .tag{color:#F92672}pre .atn{color:#a0e22a}pre .atv{color:#E6DB74}pre .dec{color:#F8F8F0}@media screen{pre.lang-css .pln{color:#6dd2f2}pre.lang-css .lit{color:#F92672}pre.lang-js .kwd{color:#AE81FF}pre.lang-sql .kwd{color:#F92672}}@media screen{pre.lang-sass .pln{color:#a0e22a}pre.lang-sass .lit{color:#F92672}pre.lang-js .kwd{color:#AE81FF}pre.lang-sql .kwd{color:#F92672}}pre.prettyprint ol.linenums{margin-top:0;margin-bottom:0;color:#8f908a;counter-reset:item;padding-left:0;list-style-type:none}pre.prettyprint ol.linenums li{display:block}pre.prettyprint ol.linenums li:before{content:counter(item) "  ";counter-increment:item}pre.prettyprint ol.linenums li span:first-child{margin-left:.5em}@media print{pre.prettyprint{background-color:none}code .str,pre .str{color:#060}code .kwd,pre .kwd{color:#006;font-weight:700}code .com,pre .com{color:#600;font-style:italic}code .typ,pre .typ{color:#404;font-weight:700}code .lit,pre .lit{color:#044}code .pun,pre .pun{color:#440}code .pln,pre .pln{color:#000}code .tag,pre .tag{color:#006;font-weight:700}code .atn,pre .atn{color:#404}code .atv,pre .atv{color:#060}}</style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 style="margin:2rem 0;" class="display-4">K-SASS-CORE</h1>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>If you use Sass in your development workflow, you know the importance of mixins. When you see some things that are written repeatedly and tediously in CSS, that’s where mixins can help you prevent repetitive work. A mixin contains CSS declarations that you can reuse throughout your site.</p>
+              <p>There are many mixins are made by developers, to help you when working with Sass in your development. Most cover things that often repetitive in CSS. From adapting across multiple browsers to creating buttons, animations and transition effects, find this and more in the following K-SASS-CORE mixin libraries you should get for your Sass development.</p>
+              <h4>Github</h4>
+              <p><a href="https://github.com/baonguyenyam/k-sass-core">https://github.com/baonguyenyam/k-sass-core</a></p>
+              <h4>Wiki docs</h4>
+              <p><a href="https://github.com/baonguyenyam/k-sass-core/wiki/Welcome-to-K-SASS-CORE">https://github.com/baonguyenyam/k-sass-core/wiki/Welcome-to-K-SASS-CORE</a></p>
+            </div>
+            <div style="text-align:right;" class="col-sm-6">
+              <p><img src="images/img_01.png" alt="alt" class="class"></p>
+            </div>
+          </div>
+          <hr>
+          <h3 style="margin:2rem 0;">APIs</h3>
+          <hr>
+          <div class="row">
+            <div class="col-4">
+              <div style="position: -webkit-sticky; position: sticky; top: 1rem;" class="list-group p-0">
+                <div class="list-group-item active">Danh mục</div><a href="#sec1" class="list-group-item list-group-item-action">Padding/Margin</a><a href="#sec2" class="list-group-item list-group-item-action">Box</a><a href="#sec3" class="list-group-item list-group-item-action">Typography</a><a href="#sec4" class="list-group-item list-group-item-action">Animation</a><a href="https://github.com/baonguyenyam/k-sass-core/tree/dev/src/sample" class="list-group-item list-group-item-action">All Sample</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <h3 id="sec1" class="h3 mb-3 mt-4">Padding/Margin</h3>
+              <h5>SASS:</h5>
+              <pre class="prettyprint lang-sass">.sample
+    +pad(2rem_ '0 !important' 3rem_) // OR +p() OR +padding()</pre>
+              <h5>CSS compile:</h5>
+              <pre class="prettyprint lang-css">.sample {
+    padding-top: 2rem !important;
+    padding-right: 0 !important;
+    padding-bottom: 3rem !important;
+}</pre>
+              <h5>SASS:</h5>
+              <pre class="prettyprint lang-sass">.sample
+    +mar(5px 'calc(100% - 4px)_')</pre>
+              <h5>CSS compile:</h5>
+              <pre class="prettyprint lang-css">.sample {
+    margin-top: 5px;
+    margin-right: calc(100% - 4px) !important;
+    margin-bottom: 5px;
+    margin-left: calc(100% - 4px) !important;
+}</pre><a href="https://github.com/baonguyenyam/k-sass-core/blob/dev/src/sample/padding.sass" title="title" class="btn btn-primary">View all padding</a><a href="https://github.com/baonguyenyam/k-sass-core/blob/dev/src/sample/margin.sass" title="title" class="btn btn-primary ml-2">View all margin</a>
+              <h3 id="sec2" class="h3 mb-3 mt-4">Box</h3>
+              <h5>SASS:</h5>
+              <pre class="prettyprint lang-sass">.sample
+    +pos(fixed, 1rem null null 0)</pre>
+              <h5>CSS compile:</h5>
+              <pre class="prettyprint lang-css">.sample {
+    position: fixed;
+    top: 1rem;
+    left: 0;
+}</pre>
+              <h5>SASS:</h5>
+              <pre class="prettyprint lang-sass">.sample
+    +bor(null, dashed color(main), 5px 4px_)</pre>
+              <h5>CSS compile:</h5>
+              <pre class="prettyprint lang-css">.sample {
+    border-top: dashed #795d9c 5px;
+    border-right: dashed #795d9c 4px !important;
+    border-bottom: dashed #795d9c 5px;
+    border-left: dashed #795d9c 4px !important;
+}</pre>
+              <h5>SASS:</h5>
+              <pre class="prettyprint lang-sass">.sample
+    +bor-rad(0_ 'calc(100% - 12px)_')</pre>
+              <h5>CSS compile:</h5>
+              <pre class="prettyprint lang-css">.sample {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: calc(100% - 12px) !important;
+    border-bottom-right-radius: 2rem;
+}</pre><a href="https://github.com/baonguyenyam/k-sass-core/blob/dev/src/sample/position.sass" title="title" class="btn btn-primary ml-2">View all position</a><a href="https://github.com/baonguyenyam/k-sass-core/blob/dev/src/sample/border.sass" title="title" class="btn btn-primary ml-2">View all border</a><a href="https://github.com/baonguyenyam/k-sass-core/blob/dev/src/sample/border-radius.sass" title="title" class="btn btn-primary ml-2">View all border radius</a><a href="https://github.com/baonguyenyam/k-sass-core/blob/dev/src/sample/before-after.sass" title="title" class="btn btn-primary ml-2">View all before-after</a>
+              <h3 id="sec3" class="h3 mb-3 mt-4">Typography</h3>
+              <h5>SASS:</h5>
+              <pre class="prettyprint lang-sass">.sample
+    +visually-hidden</pre>
+              <h5>CSS compile:</h5>
+              <pre class="prettyprint lang-css">.sample {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}</pre>
+              <h5>SASS:</h5>
+              <pre class="prettyprint lang-sass">.sample
+    +vh()</pre>
+              <h5>CSS compile:</h5>
+              <pre class="prettyprint lang-css">.sample {
+    min-width: 100vw;
+    min-height: 100vh;
+}</pre>
+              <h5>SASS:</h5>
+              <pre class="prettyprint lang-sass">.sample
+    +full-width()</pre>
+              <h5>CSS compile:</h5>
+              <pre class="prettyprint lang-css">.sample {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+}</pre>
+              <h5>SASS:</h5>
+              <pre class="prettyprint lang-sass">.sample
+    +text-sha(2px 1px 5px rgba(0, 0, 0, 0.4))</pre>
+              <h5>CSS compile:</h5>
+              <pre class="prettyprint lang-css">.sample {
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.4);
+}</pre>
+              <h5>SASS:</h5>
+              <pre class="prettyprint lang-sass">.sample
+    +box-sha(2px 2px 5px rgba(0, 0, 0, 0.4), inset)</pre>
+              <h5>CSS compile:</h5>
+              <pre class="prettyprint lang-css">.sample {
+    -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+}</pre>
+              <h5>SASS:</h5>
+              <pre class="prettyprint lang-sass">.sample
+    +lh(1.5)
+    +fz(2rem)
+    +fw(400)
+    +opacity(.5)</pre>
+              <h5>CSS compile:</h5>
+              <pre class="prettyprint lang-css">.sample {
+    line-height: 1.5;
+    font-size: 2rem;
+    font-weight: 400;
+    filter: alpha(opacity=50);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    -webkit-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    -moz-opacity: 0.5;
+    -ms-opacity: 0.5;
+    -o-opacity: 0.5;
+    opacity: 0.5;
+}</pre><a href="https://github.com/baonguyenyam/k-sass-core/blob/dev/src/sample/typography.sass" title="title" class="btn btn-primary">View typography</a><a href="https://github.com/baonguyenyam/k-sass-core/blob/dev/src/sample/colors.sass" title="title" class="btn btn-primary ml-2">View colors</a>
+              <h3 id="sec4" class="h3 mb-3 mt-4">Animation</h3>
+              <h5>SASS:</h5>
+              <pre class="prettyprint lang-sass">.sample
+    +background-gradient(#FFF, #DFDFDF)</pre>
+              <h5>CSS compile:</h5>
+              <pre class="prettyprint lang-css">.sample {
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #FFF), color-stop(100%, #DFDFDF));
+    background: -webkit-linear-gradient(0deg, #FFF 0%, #DFDFDF 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#FFF), to(#DFDFDF));
+    background: -webkit-linear-gradient(left, #FFF 0%, #DFDFDF 100%);
+    background: linear-gradient(90deg, #FFF 0%, #DFDFDF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#DFDFDF', GradientType=0 );
+}</pre><a href="https://github.com/baonguyenyam/k-sass-core/blob/dev/src/sample/animation.sass" title="title" class="btn btn-primary">View animation</a><a href="https://github.com/baonguyenyam/k-sass-core/blob/dev/src/sample/input.sass" title="title" class="btn btn-primary ml-2">View input</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer text-center mt-4">
+        <p>© BaoNguyen</p>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  </body>
+</html>

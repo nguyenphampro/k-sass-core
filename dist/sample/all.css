@@ -1,0 +1,17 @@
+
+ ////////////////////////////////////////////////////////
+ //* Bao Nguyen Apps
+ //* @version v1.0
+ //* @link https://github.com/baonguyenyam
+ //* @license MIT
+ //* @Coding by Bao Nguyen
+ ////////////////////////////////////////////////////////
+ 
+.sample {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #FFF), color-stop(100%, #DFDFDF));
+  background: -webkit-linear-gradient(0deg, #FFF 0%, #DFDFDF 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#FFF), to(#DFDFDF));
+  background: -webkit-linear-gradient(left, #FFF 0%, #DFDFDF 100%);
+  background: linear-gradient(90deg, #FFF 0%, #DFDFDF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#DFDFDF', GradientType=0 );
+}

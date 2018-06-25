@@ -1,0 +1,74 @@
+// Animation
+=rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0)
+  +bn-prefix("transform", rotate($deg))
+  filter: progid:DXImageTransform.Microsoft.Matrix( M11=#{$m11}, M12=#{$m12}, M21=#{$m21}, M22=#{$m22}, sizingMethod='auto expand')
+  zoom: 1
+
+/// Background Gradient
+=background-gradient($startColor: #3C3C3C, $endColor: #999999)
+  background: -moz-linear-gradient(0deg, $startColor 0%, $endColor 100%) /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, $startColor), color-stop(100%, $endColor)) /* safari4+,chrome */
+  background: -webkit-linear-gradient(0deg, $startColor 0%, $endColor 100%) /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(0deg, $startColor 0%, $endColor 100%) /* opera 11.10+ */
+  background: -ms-linear-gradient(0deg, $startColor 0%, $endColor 100%) /* ie10+ */
+  background: linear-gradient(90deg, $startColor 0%, $endColor 100%) /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$startColor}', endColorstr='#{$endColor}', GradientType=0 )
+
+/// Background Horizontal
+=background-horizontal($startColor: #3C3C3C, $endColor: #999999)
+  background: -moz-linear-gradient(270deg, $startColor 0%, $endColor 100%) /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, $startColor), color-stop(100%, $endColor)) /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, $startColor 0%, $endColor 100%) /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, $startColor 0%, $endColor 100%) /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, $startColor 0%, $endColor 100%) /* ie10+ */
+  background: linear-gradient(180deg, $startColor 0%, $endColor 100%) /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$startColor}', endColorstr='#{$endColor}', GradientType=0 )
+
+
+/// Background Radial
+=background-radial($startColor: #FFFFFF, $startPos: 0%, $endColor: #000000, $endPos: 100%)
+  background: -moz-radial-gradient(center, ellipse farthest-corner, $startColor $startPos, $endColor $endPos)
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop($startPos, $startColor), color-stop($endPos, $endColor))
+  background: -webkit-radial-gradient(center, ellipse farthest-corner, $startColor $startPos, $endColor $endPos)
+  background: -o-radial-gradient(center, ellipse farthest-corner, $startColor $startPos, $endColor $endPos)
+  background: -ms-radial-gradient(center, ellipse farthest-corner, $startColor $startPos, $endColor $endPos)
+  background: radial-gradient(ellipse at center, $startColor $startPos, $endColor $endPos)
+
+// Animation
+=animation($str...)
+  +bn-prefix("animation", $str...)
+
+/// Keyframes
+=keyframes($animation-name)
+  @-webkit-keyframes #{$animation-name}
+    @content
+  @-moz-keyframes #{$animation-name}
+    @content
+  @-ms-keyframes #{$animation-name}
+    @content
+  @-o-keyframes #{$animation-name}
+    @content
+  @keyframes #{$animation-name}
+    @content
+
+/// Transform
+=transform($params...)
+  +bn-prefix("transform", $params...)
+
+/// Transform-Origin
+=transform-origin($params...)
+  +bn-prefix("transform-origin", $params...)
+
+// Transform-Style
+=transform-style($style: preserve-3d)
+  +bn-prefix("transform-style", $style)
+
+/// Transition
+=transition($properties...)
+  @if length($properties) >= 1
+    +bn-prefix("transition", $properties)
+  @else
+    +bn-prefix("transition", "all 0.2s ease-in-out 0s")
+
+=delay($time: 1s)
+  +bn-prefix("animation-delay", $time)

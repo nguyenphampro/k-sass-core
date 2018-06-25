@@ -1,0 +1,67 @@
+@import ../sass/k-sass-core-only
+
+///
+/// Default BN-SAS-CORE configuration settings.
+/// @:Option: with "_" will be compile to !important
+/// @:null: with null to leave the value
+///
+
+.rotate
+    /*+rotate(45deg)*/
+    +rotate(45deg)
+
+.rotate-1
+    /*+rotate(45deg, 23,23,23,23)*/
+    +rotate(45deg, 23,23,23,23)
+
+.background-gradient
+    /*+background-gradient(#FFF, #DFDFDF)*/
+    +background-gradient(#FFF, #DFDFDF)
+
+.background-horizontal
+    /*+background-horizontal(color(main), color(link))*/
+    +background-horizontal(color(main), color(link))
+
+.background-radial
+    /*+background-radial(color(main), 0%, color(link), 100%)*/
+    +background-radial(color(main), 0%, color(link), 100%)
+
+.animation
+    /*+animation(loading .5s)*/
+    +animation(loading .5s)
+
+.animation-5
+    /*+delay(.5s)*/
+    +delay(.5s)
+
+.transform
+    /*+transform(scale(2,2))*/
+    +transform(scale(2,2))
+
+.transform-origin
+    /*+transform(rotate(45deg))*/
+    /*+transform-origin(20% 40%)*/
+    +transform(rotate(45deg))
+    +transform-origin(20% 40%)
+
+.transform-style
+    /*+transform-style(preserve-3d)*/
+    +transform-style(preserve-3d)
+
+.transition
+    /*+transition(all .5s)*/
+    +transition(all .5s)
+
+.filter
+    /*+filter(grayscale, 100%)*/
+    +filter(grayscale, 100%)
+
+.blur
+    /*+blur(5)*/
+    +blur(5)
+
++keyframes(pluse)
+    0%
+        +opacity(0)
+    100%
+        +opacity(1)

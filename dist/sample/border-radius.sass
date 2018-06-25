@@ -1,0 +1,37 @@
+@import ../sass/k-sass-core-only
+
+///
+/// Default BN-SAS-CORE configuration settings.
+/// @Type: +bor-rad([options]) OR +bor-radding([options])
+/// @:Option: with "_" will be compile to !important
+/// @:null: with null to leave the value
+///
+
+
+.sample-0
+    /*+bor-rad('50%_')*/
+    +bor-rad('50%_')
+
+.sample-1
+    /*+bor-rad(0_ 'calc(100% - 12px)_')*/
+    +bor-rad(0_ 'calc(100% - 12px)_')
+
+.sample-2
+    /*+bor-rad(7px_ '30%_' null 20px)*/
+    +bor-rad(7px_ '30%_' null 20px)
+
+.sample-3
+    /*+bor-rad(3px null 0)*/
+    +bor-rad(3px null 0_)
+
+.sample-4
+    /*+bor-rad(5px 0 2px 4px_)*/
+    +bor-rad(5px 0 2px 4px_)
+
+.sample-5
+    /*+border-radius(1px_ null 0rem_ 4rem)*/
+    +border-radius(1px_ null 0rem_ 4rem)
+
+.sample-6
+    /*+bor-rad(7px_ null 2rem_ 1rem_)*/
+    +bor-rad(7px_ null 2rem_ 1rem_)

@@ -1,0 +1,13 @@
+// PREFIX PROPERTIES
+=bn-prefix($property: null, $value: null)
+  -webkit-#{$property}: #{$value}
+  -khtml-#{$property}: #{$value}
+  -moz-#{$property}: #{$value}
+  -ms-#{$property}: #{$value}
+  -o-#{$property}: #{$value}
+  #{$property}: #{$value}
+
+=bn-value-prefixer($property,$value,$prefixes:())
+  @each $prefix in $prefixes
+    #{$property}: #{"-" + $prefix + "-" + $value}
+  #{$property}: $value

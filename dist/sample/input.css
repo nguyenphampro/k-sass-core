@@ -1,0 +1,15 @@
+.input-1 [type='color'], .input-1 [type='date'], .input-1 [type='datetime'], .input-1 [type='datetime-local'], .input-1 [type='email'], .input-1 [type='month'], .input-1 [type='number'], .input-1 [type='password'], .input-1 [type='search'], .input-1 [type='tel'], .input-1 [type='text'], .input-1 [type='time'], .input-1 [type='url'], .input-1 [type='week'], .input-1 input:not([type]), .input-1 textarea {
+  color: #795d9c;
+}
+
+.input-2 [type='color']:hover, .input-2 [type='date']:hover, .input-2 [type='datetime']:hover, .input-2 [type='datetime-local']:hover, .input-2 [type='email']:hover, .input-2 [type='month']:hover, .input-2 [type='number']:hover, .input-2 [type='password']:hover, .input-2 [type='search']:hover, .input-2 [type='tel']:hover, .input-2 [type='text']:hover, .input-2 [type='time']:hover, .input-2 [type='url']:hover, .input-2 [type='week']:hover, .input-2 input:not([type]):hover, .input-2 textarea:hover {
+  color: #607d8b;
+}
+
+.input-3 [type='color']:active, .input-3 [type='date']:active, .input-3 [type='datetime']:active, .input-3 [type='datetime-local']:active, .input-3 [type='email']:active, .input-3 [type='month']:active, .input-3 [type='number']:active, .input-3 [type='password']:active, .input-3 [type='search']:active, .input-3 [type='tel']:active, .input-3 [type='text']:active, .input-3 [type='time']:active, .input-3 [type='url']:active, .input-3 [type='week']:active, .input-3 input:not([type]):active, .input-3 textarea:active {
+  color: #ec8b00;
+}
+
+.input-4 button:hover, .input-4 [type='button']:hover, .input-4 [type='reset']:hover, .input-4 [type='submit']:hover {
+  color: #607d8b;
+}

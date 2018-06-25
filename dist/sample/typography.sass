@@ -1,0 +1,123 @@
+@import ../sass/k-sass-core-only
+
+///
+/// Default BN-SAS-CORE configuration settings.
+/// @:Option: with "_" will be compile to !important
+/// @:null: with null to leave the value
+///
+
+
+.background-1
+    +background-image("abc",null)
+
+.background-2
+    +background-image("abc",cover)
+
+.clearfix
+    /*+clearfix*/
+    +clearfix
+
+.visually-hidden
+    /*+visually-hidden*/
+    +visually-hidden
+
+.setrem
+    /*+setrem(20px)*/
+    +setrem(20px)
+
+.text-wrap-1
+    /*+text-wrap()*/
+    +text-wrap()
+
+.text-wrap-2
+    /*+text-wrap(160px, block)*/
+    +text-wrap(160px, block)
+
+.set-center
+    /*+set-center()*/
+    +set-center()
+
+.full-width-1
+    /*+vh()*/
+    +vh()
+
+.parent
+    /*@extend .full-width-1*/
+    /*font-size: 2rem*/
+    @extend .full-width-1
+    font-size: 2rem
+
+.full-width-2
+    /*+full-width()*/
+    +full-width()
+
+.columns
+    /*+columns(3,10)*/
+    +columns(3,10)
+
+.text-shadow
+    /*+text-sha()*/
+    +text-sha()
+
+.box-shadow-1
+    /*+box-shadow()*/
+    +box-sha()
+
+.box-shadow-2
+    /*+box-shadow(2px 2px 5px rgba(0, 0, 0, 0.4), inset)*/
+    +box-sha(2px 2px 5px rgba(0, 0, 0, 0.4), inset)
+
+.triple-borders
+    /*+triple-borders(#3C3C3C, #999, #000000, 0)*/
+    +triple-borders(#3C3C3C, #999, #000000, 0)
+
+.columns
+    /*+columns(3,10)*/
+    +columns(3,10)
+
+.font-size
+    /*+fz(2rem)*/
+    +fz(2rem)
+
+.font-weight
+    /*+fw(400)*/
+    +fw(400)
+
+.line-height
+    /*+lh(1.5)*/
+    +lh(1.5)
+
+.opacity
+    /*+opacity(.5)*/
+    +opacity(.5)
+
+/*++font-face('ABCFonts', "../fonts/", "myFont")*/
++font-face('ABCFonts', "../fonts/", "myFont")
+
+.before
+    /*+before(null, 50% 30px)*/
+    +before(null, 50% 30px)
+
+.after
+    /*+after('*', '50%_' 30px_, inline)*/
+    /*+pos(abs, 0 null null 0)*/
+    +after('*', '50%_' 30px_, inline)
+    +pos(abs, 0 null null 0)
+
+.placeholder
+    +placeholder
+        border: 1px
+
+.selection
+    +selection
+        border: 1px
+
+.get-shadow
+    font-size: 92px
+    padding-top: 60px
+    padding-bottom: 60px
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: .15em
+    +elegant-shadow-generator(#767676, 2, 30)
+    +gettext-shadow(#444)

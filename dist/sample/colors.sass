@@ -1,0 +1,29 @@
+@import ../sass/k-sass-core-only
+
+///
+/// Default BN-SAS-CORE configuration settings.
+/// @:Option: with "_" will be compile to !important
+/// @:null: with null to leave the value
+///
+
+.color-1
+    /*color: color(main)*/
+    /*background: color-rgba(color(link),.6)*/
+    color: color(main)
+    background: color-rgba(color(link),.6)
+
+.color-2
+    /*color: color-up(color(main), 10%)*/
+    /*background: color-down(#ff3300,20%)*/
+    color: color-up(color(main), 10%)
+    background: color-down(#ff3300,20%)
+
+.color-3
+    /*color: color-rgba(color-up(color(main), 2%),.3)*/
+    /*background: color-down(color-rgba(color(link),.6),20%)*/
+    color: color-rgba(color-up(color(main), 2%),.3)
+    background: color-down(color-rgba(color(link),.6),20%)
+
+.color-4
+    /*color: color-get($bn-colors,main)*/
+    color: color-get($bn-colors,main)
