@@ -1,0 +1,9 @@
+=text-line($lines, $line-height: null)
+	overflow: hidden
+	text-overflow: ellipsis
+	display: -webkit-box
+	-webkit-box-orient: vertical
+	-webkit-line-clamp: $lines
+	// Fallback for non-Webkit browsers
+	@if $line-height
+		max-height: $line-height * $lines
